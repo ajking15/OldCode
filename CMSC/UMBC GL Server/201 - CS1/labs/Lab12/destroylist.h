@@ -1,0 +1,1 @@
+void DestroyList(NODEPTR* headPtr);

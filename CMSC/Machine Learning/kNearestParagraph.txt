@@ -1,0 +1,36 @@
+Which value of k gave the best performance on the test data? 
+I used 3 values of k for my data sets. For a k-value of 5 I managed 100% accuracy
+on both the training and the test data.
+For k-values of 1 and 3 I received marginally lower results with 49/50.
+From the data I have it would appear that higher k-values
+yield better results.
+Is it possible given the procedure outlined above to have overfit the data in selecting k? 
+Why or why not? 
+Yes, overfitting is certainly possible. Especially at lower values of k as it 
+will stick more rigidly to the data points.
+
+Iris Data Set
+K: 1
+Source: test.txt
+Accuracy: 49/50
+Iris Data Set
+K: 3
+Source: test.txt
+Accuracy: 49/50
+Iris Data Set
+K: 5
+Source: test.txt
+Accuracy: 50/50
+
+Iris Data Set
+K: 1
+Source: test.txt
+Accuracy: 49/50
+Iris Data Set
+K: 3
+Source: test.txt
+Accuracy: 49/50
+Iris Data Set
+K: 5
+Source: test.txt
+Accuracy: 50/50

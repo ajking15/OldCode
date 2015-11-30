@@ -1,0 +1,21 @@
+
+          Welcome to the Rectangle Wizard           
+  This program will compute the area and perimeter  
+       of rectangles from the length and width      
+            of each, as per your input.             
+
+Please enter the length and width of 5 rectangles
+in the form of length, width (number comma number)
+- one pair on each line
+
+
+The properties of the rectangle(s) are:
+
+Rectangle #      Length       Width   Perimeter        Area
+------------------------------------------------------------
+          1           1           2           6           2
+          2           2           3          10           6
+          3           3           4          14          12
+          4           4           5          18          20
+          5           5           6          22          30
+

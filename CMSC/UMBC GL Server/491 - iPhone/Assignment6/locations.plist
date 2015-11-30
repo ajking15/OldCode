@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+
+	<!-- The descriptions for these locations have been taken from Wikipedia -->
+	<!-- The images are my own original photos                               -->
+	<!--                                                        Dan Hood     -->
+	
+	<array>
+		<dict>
+			<key>title</key>
+			<string>Japanese Tea Garden</string>
+			<key>description</key>
+			<string>The Japanese Tea Garden in San Francisco, California, is a popular feature of Golden Gate Park, originally built as part of a sprawling World's Fair, the California Midwinter International Exposition of 1894. For more than 20 years San Francisco Parks Trusts' Park Guides have given free tours to San Francisco Parks trust members, providing context and history for this historic Japanese-style garden.</string>
+			<key>image</key>
+			<string>budda.jpg</string>
+			<key>latitude</key>
+			<real>37.770072</real>
+			<key>longitude</key>
+			<real>-122.470296</real>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Alcatraz</string>
+			<key>description</key>
+			<string>Alcatraz Island is an island located in the San Francisco Bay, 1.5 miles offshore from San Francisco, California. Often referred to as The Rock, the small island early-on served as a lighthouse, a military fortification, a military prison, and a federal prison until 1963. Later, in 1972, Alcatraz became a national recreation area and received landmarking designations in 1976 and 1986.</string>
+			<key>image</key>
+			<string>alcatraz.jpg</string>
+			<key>latitude</key>
+			<real>37.827700</real>
+			<key>longitude</key>
+			<real>-122.423154</real>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Mount Rainier</string>
+			<key>description</key>
+			<string>Mount Rainier is an active stratovolcano (also known as a composite volcano) in Pierce County, Washington, located 54 miles southeast of Seattle. It towers over the Cascade Range as the most prominent mountain in the contiguous United States and Cascade Volcanic Arc at 14,411 feet.</string>
+			<key>image</key>
+			<string>mt-rainer.jpg</string>
+			<key>latitude</key>
+			<real>46.784028</real>
+			<key>longitude</key>
+			<real>-121.740735</real>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Pike Place Market</string>
+			<key>description</key>
+			<string>Pike Place Market is a public market overlooking the Elliott Bay waterfront in Seattle, Washington, United States. The Market opened August 17, 1907, and is one of the oldest continually operated public farmers' markets in the United States. It is a place of business for many small farmers, craftspeople and merchants. Named after the central street, Pike Place runs northwest from Pike Street to Virginia Street, and remains one of Seattle's most popular tourist destinations.</string>
+			<key>image</key>
+			<string>pike-place-market.jpg</string>
+			<key>latitude</key>
+			<real>47.608923</real>
+			<key>longitude</key>
+			<real>-122.340831</real>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Seattle Skyline</string>
+			<key>description</key>
+			<string>Seattle is located in the Pacific Northwest region of the United States. Situated in the western part of Washington State on an isthmus between Puget Sound (an arm of the Pacific Ocean) and Lake Washington, about 96 miles south of the Canada – United States border, it is named after Chief Sealth, of the Duwamish and Suquamish tribes. The encompassing Seattle-Tacoma-Bellevue metropolitan statistical area is the 15th largest in the United States, and the largest in the U.S. Pacific Northwest</string>
+			<key>image</key>
+			<string>seattle-skyline.jpg</string>
+			<key>latitude</key>
+			<real>47.606275</real>
+			<key>longitude</key>
+			<real>-122.340713</real>
+		</dict>
+	</array>
+</plist>

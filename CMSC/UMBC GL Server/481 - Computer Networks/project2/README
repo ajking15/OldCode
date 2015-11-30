@@ -1,0 +1,14 @@
+Compile
+  Server: //Be within ./server dir
+      make
+  Client: //Be within ./client dir
+      make
+
+Run
+  Server: //Be within ./server dir
+      ./ftpsvr <port> //<port> one of the non-reserved ports
+  Client: //Be within ./client dir
+      ./ftpclt localhost <port> //use same port as server
+
+Test:
+  Just run the two programs and use the commands

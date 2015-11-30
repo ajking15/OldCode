@@ -1,0 +1,10 @@
+  well, writing the client was almost a complete copy-paste from project 1. 
+Writing the server was also straightforward enough. The hard part was learning
+to manage multiple connections. I managed this by investigating the select
+which basically keeps track of which sockets are ready to send/receive. This 
+changed the way I was originally going to implement the server. Since I would
+be using the select call I decided not to keep track of what a client has 
+done before. IE, I wouldn't know if a user was logged in or not. I wouldn't 
+really change anything project wise. The knowledge of how to code these 
+projects is easily attained with a simple reference book. Everything is
+sends and recvs. The rest is basic coding knowledge 

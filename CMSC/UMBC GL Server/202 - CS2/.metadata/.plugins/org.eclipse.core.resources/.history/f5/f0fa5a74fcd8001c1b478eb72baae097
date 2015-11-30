@@ -1,0 +1,42 @@
+/**
+ * file: lab2.java
+ * project: cmsc 202 project lab2
+ * author: Christopher Mai
+ * Date: Feb 11, 2008
+ * section: 0401
+ * e-mail: chrmai1@umbc.edu
+ */
+package lab2;
+
+public static final FRACTION_SEPARATOR = "/";
+
+/**
+ * @author chrmai1
+ *
+ */
+public class Lab2 {
+	
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+	
+	/**
+	 * name: print
+	 * @param numerator - Numerator of the fraction
+	 * @param denominator - Denominator of the fraction
+	 */
+	public static void print(int numerator, int denominator){
+		
+		System.out.println("The numerator is " + numerator
+				+ FRACTION_SEPARATOR + denominator);
+		
+	}
+	
+}
+
+

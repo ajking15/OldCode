@@ -1,0 +1,42 @@
+Script started on Thu May  6 21:15:57 2010
+linux3[1]% f[K./ftpclt localhost 5427
+Connected to localhost
+220 Welcome to my FTP Server
+Name (localhost: ): ftp
+331 Anonymous login ok, Send Password
+Password: chrmai1@umbc.edu
+230 User Granted Anonymous Access, Proceed
+Supported system calls include: help, ls, get, put, pwd, syst, and quit
+ftp> ls
+150 Opening ASCII mode data connection for file list
+rawr.txt
+
+ftp> pwd
+257 "/" is the current directory
+ftp> syst
+215 UNIX Type: L8
+ftp> put helloworld.txt
+150 File Transferred
+ftp> ls
+150 Opening ASCII mode data connection for file list
+rawr.txt
+helloworld.txt
+
+ftp> get rawr.txt
+150 File Transferred
+ftp> help
+Supported Commands:
+user
+ls <dir(optional)>
+get <filename>
+put <filename>
+pwd
+syst
+quit
+help
+ftp> quit
+221 Goodbye.
+linux3[2]% exit
+exit
+
+Script done on Thu May  6 21:17:03 2010

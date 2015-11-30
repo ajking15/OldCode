@@ -1,0 +1,16 @@
+/**********************
+ * Name: Christopher Mai
+ *
+ * Major: Computer Science
+ *
+ * Programming Exp: cmsc II(java)
+ *                  cmsc 201(c)
+ * 
+ * Reason for taking the course: Major Requirement, it is the class after 201
+ *
+ * Expected Grade: A, because I plan on doing my best to complete my projects
+ *                 and to study for the tests
+ *
+ * Anything Else: I started programming my senior of high school and enjoyed 
+ *                it, now it is my major.
+ ************************/

@@ -1,0 +1,147 @@
+;;-----------------------------------------
+;;Final Project, CMSC, Fall 2009
+;;-----------------------------------------
+
+
+(if (not (find-package :mm-created-player)) (make-package :mm-created-player))
+(in-package :mm-created-player)
+
+(use-package :mm-created-player)
+
+;(defvar *closed* '())
+;;should take in a list of colors and a code length
+
+(defvar *model*  '()
+  "List of colors for the current game")
+
+;;Resetting the guesses
+
+
+(defun init-guess (&optional (colors *colors*) 
+                             (code-length *code-length*)
+                             &aux reds whites)
+
+  (let ((guess 
+         (loop for i from 1 to code-length collect (car colors))))
+    (loop while guess
+          do (format t "Guessing ~s...~% " guess)
+          (multiple-value-setq (reds whites) (mm-score guess))
+          
+          (if (equalp reds code-length) 
+              (progn (format t "Guessed ~s correctly in ~s guesses!~%"
+                             guess *guesses*)
+                     (return-from init-guess)))
+          (loop for i from 1 to reds
+                do (setf *model* (append *model* 
+                                         (list (car colors)))))
+          (if (or (not (equalp code-length (length *model*))) 
+                  (null *model*))
+              (progn
+                (init-guess (cdr colors) code-length)
+                (setf guess '())) 
+            (progn (setf guess '()) (return-from init-guess))))))
+
+
+(defun walkSat (&optional (colors *colors*) (code-length *code-length*))
+  "Implementing a walkSat variation to solve the 
+   Mastermind Game"
+  
+  ;set our model. narrow our guess to a list of 
+  ;all the colors and their quantity
+
+  (set-up)
+
+  (loop for iCounter from 0 to 2000000 do
+        (progn
+          (cond((equalp reds code-length)
+                (format t "walkSat guessed ~s correctly in ~s guesses!~%" 
+                        guess *guesses*)
+                (return-from walkSat))
+               (t (progn 
+                   
+                   ; (p "Before Max-sat")
+                    (multiple-value-setq (guess reds)
+                                         (choose-max-sat guess reds)
+)))))))
+
+(defun set-up () 
+ (setf *model* '())
+  (setf *closed* '())
+  (setf *ranking* '())
+  (setf *guesses* 0)
+  (loop for i from 1 to *code-length* do
+        (setf *ranking* (append (list '0) *ranking*)))
+  (init-guess)
+  (setf guess *model*)
+  (multiple-value-setq (reds whites)
+                       (mm-score guess))
+)
+
+(defun choose-max-sat (guess reds)
+  "Will choose next best flip"
+  (setf tempGuess (copy-list guess))
+  (setf tGuess (copy-list guess))
+  (setf xy 1)
+  (setf innerLoop (length guess))
+  (setf loopLength (- (length guess) 1))
+
+  (loop for xyz from 0 to (length guess) do
+            (loop for zyx from xy to loopLength do
+                  ;;if the positions are different check score
+                  (format t "Guessing ~s...~%" guess)   
+                  (setf tempGuess (copy-list guess))
+                  (swap xyz zyx)
+
+                  (if (and (not (equalp (nth xyz *ranking*) '2))
+                           (not (equalp (nth zyx *ranking*) '2)))
+                      (progn
+                        (multiple-value-setq (tRed tWhite)
+                                             (mm-score tempGuess))
+                        
+                        (if (equalp tRed (+ reds 2))
+                            (progn
+                              (setf (nth xyz *ranking*) '2)
+                              (setf (nth zyx *ranking*) '2)
+                              (setf reds tRed)
+                              (setf guess (copy-list tempGuess))
+                              (return)))
+                        
+                        (if (> tRed reds)
+                            (progn
+                              (setf reds tRed)
+                              (setf guess (copy-list tempGuess)))))))
+                  
+              (incf xy))
+      (values guess reds)
+)
+
+#|
+(defun diffPos (currPos currGuess)
+ ; (print currPos)
+  (setf ujk 0)
+  (setf bool T)
+  ;(print currGuess)
+  (loop while bool do
+        (setf ujk (random (length currGuess)))
+        (if (not (equalp (nth currPos currGuess) (nth ujk currGuess)))
+            (progn
+              (setf getPos ujk)
+              (return-from diffPos))))
+
+  (loop for dfd in currGuess do     
+        ;(print currPos)
+        (if (not (equalp (nth currPos currGuess) dfd))
+            (progn
+              (setf getPos ujk) 
+              (return-from diffPos)))
+        (incf ujk))
+|#
+
+
+(defun swap (pos1 pos2)
+  "Swaps two positions in a list"
+  (setf tempColor (nth pos1 tempGuess))  
+  (setf (nth pos1 tempGuess) (nth pos2 tempGuess))  
+  (setf (nth pos2 tempGuess) tempColor)
+  (setf tempGuess tempGuess)
+)

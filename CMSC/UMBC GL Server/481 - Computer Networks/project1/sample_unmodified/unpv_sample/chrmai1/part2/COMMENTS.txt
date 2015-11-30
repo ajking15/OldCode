@@ -1,0 +1,15 @@
+# Christopher Mai
+# CMSC 481
+# Computer Networks
+# COMMENTS.txt
+
+   Similar to the other comments.txt, I've already done socket programming
+    before. The new thing for me in this project was communicating with an 
+    externel server. I ran in too several careless mistakes such as trying to
+    recieve into a char pointer instead of an array, and, sending with sizeof
+    instead of strlen. Both of which were errors easily enough avoided if I had
+    read more carefully, although they were difficult to debug. It was fairly
+    interesting reading through the rfc protocol. Overall I enjoyed the
+    project. On another note, I finished the project over 4 days. I feel that
+    the project timeline was much longer than it needs to be. On the other hand
+    coding isn't a focus in this class so I'm not sure it matters.

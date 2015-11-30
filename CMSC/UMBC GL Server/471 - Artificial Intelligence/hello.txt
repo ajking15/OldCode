@@ -1,0 +1,6 @@
+Hello Professor. 
+At first I couldn't save this file. I had no idea why.
+But after running oitcleaner i realized I had used up all my memory 
+available on the gl network. Apparently I had some large files somewhere.
+See you in class.
+Chris Mai

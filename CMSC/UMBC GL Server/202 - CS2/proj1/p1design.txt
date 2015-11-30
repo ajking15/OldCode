@@ -1,0 +1,35 @@
+CMSC 202 Project 1 Design
+============================
+
+Edit this file and submit it as part of your project 1 submission.
+The answers to these questions count 10% of your project grade.
+
+Name: Christopher Mai
+UMBC Email: chrmai1@umbc.edu
+Section: 0401
+
+Part of the design process for a procedural solution to a programming problem like Project 1 is to
+"envision" the various logical parts of the problem that will eventually become functions (or "methods"
+in OO-speak).  This "vision" may often take the form of diagram that shows the logical flow of the solution.
+
+For Project 1, try to envision what your solution will eventually look like prior to writing code.
+Your assignment is to list the names of the various methods you will write (including main) and a brief description
+of each method's purpose.  Don't write method headers with parameter definitions, just names and brief desciptions.
+
+main - calls other functions
+
+getKeyword - obtains the keyword from the user 
+
+getMessage - obtains the chosen message for encoding/decoding from the user
+
+option - asks the user if encoding or decoding is desired
+
+removeWhitespace - takes the keyword/message and removes all whitespace
+
+removeDuplicate - takes the keyword and removes duplicate letters 
+
+initializeArray - takes the keyword and initializes the 5x5 array for encoding/decoding
+
+encode - encodes the message given by the user using the playfair cipher
+
+decode - decodes an ecrypted message using the playfair cipher

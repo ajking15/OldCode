@@ -1,0 +1,16 @@
+CMSC 202 Spring 2008
+Project 2 Design Questions
+
+Copy this file to your directory and edit it to answer the questions below.
+These questions are worth 10% of the project grade.
+Be sure to submit your answers before the project design due date listed in the project description.
+
+1. Briefly describe each class that you have decided to design and implement for this
+project.  What is its purpose?  What are its primary instance variables and methods?
+
+outside of game, rank, suit, coordinate there is the utility class.The utility class takes care of everything
+not done in the other classes. uses methods like shuffling the deck, dealing, and saving arrays, etc.
+
+2. Identify all uses of "composition" used in the Game class, Coordinates class, and all
+classes you have designed.
+Game object used in making the cards with their ranks and suits.

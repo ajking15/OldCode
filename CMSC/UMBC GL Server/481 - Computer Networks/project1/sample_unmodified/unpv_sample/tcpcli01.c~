@@ -1,0 +1,71 @@
+#include "common.h"
+#include <sys/types.h>
+#include <sys/socket.h>
+#include <netdb.h>
+
+
+void str_cli(FILE *fp, int sockfd)
+{
+	char	sendline[MAXLINE], recvline[MAXLINE];
+
+	while (Fgets(sendline, MAXLINE, fp) != NULL) {
+
+		Writen(sockfd, sendline, strlen(sendline));
+
+		if (Readline(sockfd, recvline, MAXLINE) == 0)
+			err_quit("str_cli: server terminated prematurely");
+
+		Fputs(recvline, stdout);
+	}
+}
+
+int
+main(int argc, char **argv)
+{
+/*	int					sockfd;
+	struct sockaddr_in	servaddr;
+
+	if (argc != 2)
+		err_quit("usage: tcpcli <IPaddress>");
+
+	sockfd = Socket(AF_INET, SOCK_STREAM, 0);
+	//hello
+	printf("hello there\n");
+	bzero(&servaddr, sizeof(servaddr));
+	servaddr.sin_family = AF_INET;
+	servaddr.sin_port = htons(SERV_PORT);
+	Inet_pton(AF_INET, argv[1], &servaddr.sin_addr);
+
+	Connect(sockfd, (SA *) &servaddr, sizeof(servaddr));
+
+	str_cli(stdin, sockfd);
+*/
+   printf("Start!\n");
+   struct addrinfo hints, *res;
+   int sockfd;
+
+   memset(&hints, 0, sizeof hints);
+
+   hints.ai_family = AF_UNSPEC;
+   hints.ai_socktype = SOCK_STREAM;
+
+   printf("getaddrinfo!\n");
+   getaddrinfo(argv[1], argv[2], &hints, &res);
+
+   printf("Socket!\n");
+   sockfd = Socket(res->ai_family, res->ai_socktype, res->ai_protocol);
+
+   printf("Bind!\n");
+   Bind(sockfd, res->ai_addr, res->ai_addrlen);
+
+   printf("Connect!\n");
+   Connect(sockfd, res->ai_addr, res->ai_addrlen);
+
+   printf("str_cli\n");
+   str_cli(stdin, sockfd);
+
+   close(sockfd);
+
+   
+	exit(0);
+}

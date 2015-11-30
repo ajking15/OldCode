@@ -1,0 +1,92 @@
+Script started on Wed 28 Oct 2009 02:48:34 AM EDT
+linux2[1]% clisp
+WARNING: *FOREIGN-ENCODING*: reset to ASCII
+  i i i i i i i       ooooo    o        ooooooo   ooooo   ooooo
+  I I I I I I I      8     8   8           8     8     o  8    8
+  I  \ `+' /  I      8         8           8     8        8    8
+   \  `-+-'  /       8         8           8      ooooo   8oooo
+    `-__|__-'        8         8           8           8  8
+        |            8     o   8           8     o     8  8
+  ------+------       ooooo    8oooooo  ooo8ooo   ooooo   8
+
+Copyright (c) Bruno Haible, Michael Stoll 1992, 1993
+Copyright (c) Bruno Haible, Marcus Daniels 1994-1997
+Copyright (c) Bruno Haible, Pierpaolo Bernardi, Sam Steingold 1998
+Copyright (c) Bruno Haible, Sam Steingold 1999-2000
+Copyright (c) Sam Steingold, Bruno Haible 2001-2004
+
+
+[1]> (load "benchmarks.lli[K[Kisp")[1]> [1]> (load "benchmarks.lisp")
+;; Loading file benchmarks.lisp ...
+;; Loaded file benchmarks.lisp
+T
+[2]> (load "benchmarks.lisp")[1P.lisp")[1P.lisp")[1P.lisp")[1P.lisp")[1P.lisp")[1P.lisp")[1P.lisp")[1P.lisp")[1P.lisp")[1P.lisp")w.lisp")a.lisp")k.lisp")[1P.lisp")l.lisp")k.lisp")S.lisp")a.lisp")t.lisp")H.lisp")w.lisp")
+;; Loading file walkSatHw.lisp ...
+;; Loaded file walkSatHw.lisp
+T
+[3]> (walksat *clauses0* .2 100)[3]> [3]> (walksat *clauses0* .2 100)
+
+"success" 
+0 
+((A T))
+[4]> (walksat *clauses0* .2 100)[4]> (walksat *clauses0* .[4]> (walksat *clauses0* .2[1P[1@1
+
+"success" 
+2 
+((B T) (A T))
+[5]> (walksat *clauses1* .2 100)[1P[1@2
+
+"success" 
+1 
+((C T) (B NIL) (A T))
+[6]> (walksat *clauses2* .2 100)[6]> (walksat *clauses2[1P[1P[1P[1P[1P[1P[1P[1P[1@b[1@2[1@0
+
+"success" 
+20 
+((V2 NIL) (V1 T) (V6 T) (V14 T) (V11 NIL) (V17 T) (V9 T) (V12 NIL) (V13 NIL)
+ (V10 NIL) (V16 NIL) (V7 NIL) (V20 T) (V15 T) (V8 NIL) (V5 NIL) (V3 NIL)
+ (V19 NIL) (V18 NIL) (V4 NIL))
+[7]> (walksat *b20* .2 100)
+NIL
+[8]> (walksat *b20* .2 100)
+
+"success" 
+8 
+((V2 NIL) (V1 T) (V6 T) (V14 T) (V11 NIL) (V17 T) (V9 T) (V12 NIL) (V13 T)
+ (V10 NIL) (V16 NIL) (V7 NIL) (V20 T) (V15 T) (V8 NIL) (V5 NIL) (V3 NIL)
+ (V19 NIL) (V18 NIL) (V4 NIL))
+[9]> (walksat *b20* .2 100)
+NIL
+[10]> (walksat *b20* .2 100)
+NIL
+[11]> (walksat *b20* .2 100)
+NIL
+[12]> (walksat *b20* .2 100)
+NIL
+[13]> (walksat *b20* .2 100)
+
+"success" 
+6 
+((V2 NIL) (V1 T) (V6 T) (V14 T) (V11 NIL) (V17 T) (V9 NIL) (V12 NIL) (V13 T)
+ (V10 NIL) (V16 NIL) (V7 NIL) (V20 T) (V15 T) (V8 NIL) (V5 NIL) (V3 NIL)
+ (V19 NIL) (V18 NIL) (V4 T))
+[14]> (walksat *b20* .2 100)[1P[1@5[14]> (walksat *b50[14]> (walksat *b50*[14]> (walksat *b50* [14]> (walksat *b50* .[14]> (walksat *b50* .2[14]> (walksat *b50* .2 [14]> (walksat *b50* .2 1[14]> (walksat *b50* .2 10[14]> (walksat *b50* .2 1000)
+NIL
+[15]> (walksat *b50* .2 1000)[1P20* .2 100)50* .2 1000)
+NIL
+[16]> (walksat *b50* .2 1000)[1P 1000)3 1000)[16]> (walksat *b50* .3 [16]> (walksat *b50* .3 1[1P000)3000)
+
+"success" 
+1903 
+((V9 T) (V4 T) (V30 NIL) (V1 NIL) (V12 T) (V25 NIL) (V5 T) (V20 T) (V19 T)
+ (V46 NIL) (V28 NIL) (V16 NIL) (V32 T) (V10 NIL) (V11 NIL) (V24 NIL) (V45 NIL)
+ (V29 NIL) (V26 NIL) (V37 T) (V50 NIL) (V44 NIL) (V35 T) (V33 NIL) (V13 NIL)
+ (V2 T) (V23 T) (V34 NIL) (V43 NIL) (V6 T) (V18 NIL) (V15 T) (V14 T) (V38 T)
+ (V27 T) (V22 NIL) (V39 T) (V31 NIL) (V21 NIL) (V17 NIL) (V40 NIL) (V8 T)
+ (V41 NIL) (V47 T) (V49 T) (V48 T) (V42 NIL) (V7 T) (V36 T) (V3 NIL))
+[17]> (quit)[17]> (quit)
+Bye.
+linux2[2]% exit
+exit
+
+Script done on Wed 28 Oct 2009 03:04:30 AM EDT

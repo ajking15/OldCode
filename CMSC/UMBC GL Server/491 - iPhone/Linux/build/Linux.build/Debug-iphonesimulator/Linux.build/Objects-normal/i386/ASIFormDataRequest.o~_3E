@@ -1,0 +1,76 @@
+/Users/chrmai1/Desktop/Linux/ASIFormDataRequest.m: In function '-[ASIFormDataRequest encodeURL:]':
+/Users/chrmai1/Desktop/Linux/ASIFormDataRequest.m:33: warning: 'ASIFormDataRequest' may not respond to '-stringEncoding'
+/Users/chrmai1/Desktop/Linux/ASIFormDataRequest.m:33: warning: (Messages without a matching method signature
+/Users/chrmai1/Desktop/Linux/ASIFormDataRequest.m:33: warning: will be assumed to return 'id' and accept
+/Users/chrmai1/Desktop/Linux/ASIFormDataRequest.m:33: warning: '...' as arguments.)
+/Users/chrmai1/Desktop/Linux/ASIFormDataRequest.m:33: warning: passing argument 1 of 'CFStringConvertNSStringEncodingToEncoding' makes integer from pointer without a cast
+/Users/chrmai1/Desktop/Linux/ASIFormDataRequest.m: In function '-[ASIFormDataRequest initWithURL:]':
+/Users/chrmai1/Desktop/Linux/ASIFormDataRequest.m:49: warning: 'NSObject' may not respond to '-initWithURL:'
+/Users/chrmai1/Desktop/Linux/ASIFormDataRequest.m:50: error: 'ASIURLEncodedPostFormat' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIFormDataRequest.m:50: error: (Each undeclared identifier is reported only once
+/Users/chrmai1/Desktop/Linux/ASIFormDataRequest.m:50: error: for each function it appears in.)
+/Users/chrmai1/Desktop/Linux/ASIFormDataRequest.m:50: warning: 'ASIFormDataRequest' may not respond to '-setPostFormat:'
+/Users/chrmai1/Desktop/Linux/ASIFormDataRequest.m:51: warning: 'ASIFormDataRequest' may not respond to '-setStringEncoding:'
+/Users/chrmai1/Desktop/Linux/ASIFormDataRequest.m: In function '-[ASIFormDataRequest dealloc]':
+/Users/chrmai1/Desktop/Linux/ASIFormDataRequest.m:61: error: 'postData' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIFormDataRequest.m:62: error: 'fileData' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIFormDataRequest.m: In function '-[ASIFormDataRequest setPostValue:forKey:]':
+/Users/chrmai1/Desktop/Linux/ASIFormDataRequest.m:74: warning: 'ASIFormDataRequest' may not respond to '-setRequestMethod:'
+/Users/chrmai1/Desktop/Linux/ASIFormDataRequest.m: In function '-[ASIFormDataRequest setFile:forKey:]':
+/Users/chrmai1/Desktop/Linux/ASIFormDataRequest.m:79: warning: 'ASIFormDataRequest' may not respond to '-setFile:withFileName:andContentType:forKey:'
+/Users/chrmai1/Desktop/Linux/ASIFormDataRequest.m: In function '-[ASIFormDataRequest setFile:withFileName:andContentType:forKey:]':
+/Users/chrmai1/Desktop/Linux/ASIFormDataRequest.m:93: error: 'NetworkRequestErrorDomain' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIFormDataRequest.m:93: error: 'ASIInternalErrorWhileBuildingRequestType' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIFormDataRequest.m:93: warning: 'ASIFormDataRequest' may not respond to '-failWithError:'
+/Users/chrmai1/Desktop/Linux/ASIFormDataRequest.m:104: error: 'ASIHTTPRequest' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIFormDataRequest.m:110: warning: 'ASIFormDataRequest' may not respond to '-setRequestMethod:'
+/Users/chrmai1/Desktop/Linux/ASIFormDataRequest.m: In function '-[ASIFormDataRequest setData:forKey:]':
+/Users/chrmai1/Desktop/Linux/ASIFormDataRequest.m:115: warning: 'ASIFormDataRequest' may not respond to '-setData:withFileName:andContentType:forKey:'
+/Users/chrmai1/Desktop/Linux/ASIFormDataRequest.m: In function '-[ASIFormDataRequest setData:withFileName:andContentType:forKey:]':
+/Users/chrmai1/Desktop/Linux/ASIFormDataRequest.m:129: warning: 'ASIFormDataRequest' may not respond to '-setRequestMethod:'
+/Users/chrmai1/Desktop/Linux/ASIFormDataRequest.m: In function '-[ASIFormDataRequest buildPostBody]':
+/Users/chrmai1/Desktop/Linux/ASIFormDataRequest.m:134: warning: 'ASIFormDataRequest' may not respond to '-haveBuiltPostBody'
+/Users/chrmai1/Desktop/Linux/ASIFormDataRequest.m:143: warning: 'NSObject' may not respond to '-buildPostBody'
+/Users/chrmai1/Desktop/Linux/ASIFormDataRequest.m:147: warning: 'ASIFormDataRequest' may not respond to '-setShouldStreamPostDataFromDisk:'
+/Users/chrmai1/Desktop/Linux/ASIFormDataRequest.m:150: warning: 'ASIFormDataRequest' may not respond to '-postFormat'
+/Users/chrmai1/Desktop/Linux/ASIFormDataRequest.m:150: error: 'ASIURLEncodedPostFormat' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIFormDataRequest.m:156: warning: 'NSObject' may not respond to '-buildPostBody'
+/Users/chrmai1/Desktop/Linux/ASIFormDataRequest.m: In function '-[ASIFormDataRequest buildMultipartFormDataPostBody]':
+/Users/chrmai1/Desktop/Linux/ASIFormDataRequest.m:171: warning: 'ASIFormDataRequest' may not respond to '-stringEncoding'
+/Users/chrmai1/Desktop/Linux/ASIFormDataRequest.m:171: warning: passing argument 1 of 'CFStringConvertNSStringEncodingToEncoding' makes integer from pointer without a cast
+/Users/chrmai1/Desktop/Linux/ASIFormDataRequest.m:176: warning: 'ASIFormDataRequest' may not respond to '-addRequestHeader:value:'
+/Users/chrmai1/Desktop/Linux/ASIFormDataRequest.m:195: error: 'fileData' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIFormDataRequest.m:207: warning: 'ASIFormDataRequest' may not respond to '-appendPostDataFromFile:'
+/Users/chrmai1/Desktop/Linux/ASIFormDataRequest.m:209: warning: 'ASIFormDataRequest' may not respond to '-appendPostData:'
+/Users/chrmai1/Desktop/Linux/ASIFormDataRequest.m: In function '-[ASIFormDataRequest buildURLEncodedPostBody]':
+/Users/chrmai1/Desktop/Linux/ASIFormDataRequest.m:230: error: 'ASIMultipartFormDataPostFormat' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIFormDataRequest.m:230: warning: 'ASIFormDataRequest' may not respond to '-setPostFormat:'
+/Users/chrmai1/Desktop/Linux/ASIFormDataRequest.m:240: warning: 'ASIFormDataRequest' may not respond to '-stringEncoding'
+/Users/chrmai1/Desktop/Linux/ASIFormDataRequest.m:240: warning: passing argument 1 of 'CFStringConvertNSStringEncodingToEncoding' makes integer from pointer without a cast
+/Users/chrmai1/Desktop/Linux/ASIFormDataRequest.m:242: warning: 'ASIFormDataRequest' may not respond to '-addRequestHeader:value:'
+/Users/chrmai1/Desktop/Linux/ASIFormDataRequest.m: In function '-[ASIFormDataRequest appendPostString:]':
+/Users/chrmai1/Desktop/Linux/ASIFormDataRequest.m:264: warning: 'ASIFormDataRequest' may not respond to '-stringEncoding'
+/Users/chrmai1/Desktop/Linux/ASIFormDataRequest.m:264: warning: passing argument 1 of 'dataUsingEncoding:' makes integer from pointer without a cast
+/Users/chrmai1/Desktop/Linux/ASIFormDataRequest.m:264: warning: 'NSObject' may not respond to '-appendPostData:'
+/Users/chrmai1/Desktop/Linux/ASIFormDataRequest.m: At top level:
+/Users/chrmai1/Desktop/Linux/ASIFormDataRequest.m:295: error: no declaration of property 'postFormat' found in the interface
+/Users/chrmai1/Desktop/Linux/ASIFormDataRequest.m:296: error: no declaration of property 'stringEncoding' found in the interface
+/Users/chrmai1/Desktop/Linux/ASIFormDataRequest.m:294: error: synthesized property 'fileData' must either be named the same as a compatible ivar or must explicitly name an ivar
+/Users/chrmai1/Desktop/Linux/ASIFormDataRequest.m:293: error: synthesized property 'postData' must either be named the same as a compatible ivar or must explicitly name an ivar
+{standard input}:149:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_1" minus "L00000000002$pb"
+{standard input}:149:symbol: "L_OBJC_SELECTOR_REFERENCES_1" can't be undefined in a subtraction expression
+{standard input}:141:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_3" minus "L00000000002$pb"
+{standard input}:141:symbol: "L_OBJC_SELECTOR_REFERENCES_3" can't be undefined in a subtraction expression
+{standard input}:135:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_2" minus "L00000000002$pb"
+{standard input}:135:symbol: "L_OBJC_SELECTOR_REFERENCES_2" can't be undefined in a subtraction expression
+{standard input}:92:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_1" minus "L00000000001$pb"
+{standard input}:92:symbol: "L_OBJC_SELECTOR_REFERENCES_1" can't be undefined in a subtraction expression
+{standard input}:82:non-relocatable subtraction expression, "L_kCFAllocatorDefault$non_lazy_ptr" minus "L00000000001$pb"
+{standard input}:82:symbol: "L_kCFAllocatorDefault$non_lazy_ptr" can't be undefined in a subtraction expression
+{standard input}:72:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_0" minus "L00000000001$pb"
+{standard input}:72:symbol: "L_OBJC_SELECTOR_REFERENCES_0" can't be undefined in a subtraction expression
+{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_0
+{standard input}:unknown:Undefined local symbol L_kCFAllocatorDefault$non_lazy_ptr
+{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_1
+{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_2
+{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_3

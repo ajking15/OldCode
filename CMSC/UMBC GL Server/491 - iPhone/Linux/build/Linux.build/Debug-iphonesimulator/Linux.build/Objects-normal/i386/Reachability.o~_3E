@@ -1,0 +1,67 @@
+/Users/chrmai1/Desktop/Linux/Reachability.m:76: error: no declaration of property 'networkStatusNotificationsEnabled' found in the interface
+/Users/chrmai1/Desktop/Linux/Reachability.m:77: error: no declaration of property 'hostName' found in the interface
+/Users/chrmai1/Desktop/Linux/Reachability.m:78: error: no declaration of property 'address' found in the interface
+/Users/chrmai1/Desktop/Linux/Reachability.m:79: error: no declaration of property 'reachabilityQueries' found in the interface
+/Users/chrmai1/Desktop/Linux/Reachability.m: In function '+[Reachability sharedReachability]':
+/Users/chrmai1/Desktop/Linux/Reachability.m:87: error: request for member 'hostName' in something not a structure or union
+/Users/chrmai1/Desktop/Linux/Reachability.m:88: error: request for member 'address' in something not a structure or union
+/Users/chrmai1/Desktop/Linux/Reachability.m:89: error: request for member 'networkStatusNotificationsEnabled' in something not a structure or union
+/Users/chrmai1/Desktop/Linux/Reachability.m:90: error: request for member 'reachabilityQueries' in something not a structure or union
+/Users/chrmai1/Desktop/Linux/Reachability.m: In function '-[Reachability dealloc]':
+/Users/chrmai1/Desktop/Linux/Reachability.m:99: error: request for member 'reachabilityQueries' in something not a structure or union
+/Users/chrmai1/Desktop/Linux/Reachability.m: In function '-[Reachability isAdHocWiFiNetworkAvailableFlags:]':
+/Users/chrmai1/Desktop/Linux/Reachability.m:149: error: 'ReachabilityQuery' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/Reachability.m:149: error: (Each undeclared identifier is reported only once
+/Users/chrmai1/Desktop/Linux/Reachability.m:149: error: for each function it appears in.)
+/Users/chrmai1/Desktop/Linux/Reachability.m:149: error: 'query' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/Reachability.m:149: error: request for member 'reachabilityQueries' in something not a structure or union
+/Users/chrmai1/Desktop/Linux/Reachability.m:171: error: request for member 'reachabilityQueries' in something not a structure or union
+/Users/chrmai1/Desktop/Linux/Reachability.m: In function '-[Reachability isNetworkAvailableFlags:]':
+/Users/chrmai1/Desktop/Linux/Reachability.m:214: error: 'ReachabilityQuery' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/Reachability.m:214: error: 'query' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/Reachability.m:214: error: request for member 'reachabilityQueries' in something not a structure or union
+/Users/chrmai1/Desktop/Linux/Reachability.m:231: error: request for member 'reachabilityQueries' in something not a structure or union
+/Users/chrmai1/Desktop/Linux/Reachability.m: In function '-[Reachability stopListeningForReachabilityChanges]':
+/Users/chrmai1/Desktop/Linux/Reachability.m:264: error: request for member 'reachabilityQueries' in something not a structure or union
+/Users/chrmai1/Desktop/Linux/Reachability.m:265: error: 'ReachabilityQuery' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/Reachability.m:265: error: 'reachabilityQuery' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/Reachability.m: In function '-[Reachability reachabilityRefForHostName:]':
+/Users/chrmai1/Desktop/Linux/Reachability.m:294: error: 'ReachabilityQuery' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/Reachability.m:294: error: 'cachedQuery' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/Reachability.m:294: error: request for member 'reachabilityQueries' in something not a structure or union
+/Users/chrmai1/Desktop/Linux/Reachability.m:306: error: 'query' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/Reachability.m:319: error: request for member 'reachabilityQueries' in something not a structure or union
+/Users/chrmai1/Desktop/Linux/Reachability.m: In function '-[Reachability reachabilityRefForAddress:]':
+/Users/chrmai1/Desktop/Linux/Reachability.m:344: error: 'ReachabilityQuery' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/Reachability.m:344: error: 'cachedQuery' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/Reachability.m:344: error: request for member 'reachabilityQueries' in something not a structure or union
+/Users/chrmai1/Desktop/Linux/Reachability.m:356: error: 'query' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/Reachability.m:369: error: request for member 'reachabilityQueries' in something not a structure or union
+/Users/chrmai1/Desktop/Linux/Reachability.m: At top level:
+/Users/chrmai1/Desktop/Linux/Reachability.m:373: error: expected ')' before 'NetworkStatus'
+/Users/chrmai1/Desktop/Linux/Reachability.m: In function '-[Reachability remoteHostStatus]':
+/Users/chrmai1/Desktop/Linux/Reachability.m:383: error: request for member 'hostName' in something not a structure or union
+/Users/chrmai1/Desktop/Linux/Reachability.m:384: error: request for member 'hostName' in something not a structure or union
+/Users/chrmai1/Desktop/Linux/Reachability.m:386: error: request for member 'address' in something not a structure or union
+/Users/chrmai1/Desktop/Linux/Reachability.m:387: error: request for member 'address' in something not a structure or union
+/Users/chrmai1/Desktop/Linux/Reachability.m:390: error: request for member 'hostName' in something not a structure or union
+/Users/chrmai1/Desktop/Linux/Reachability.m:390: error: request for member 'address' in something not a structure or union
+/Users/chrmai1/Desktop/Linux/Reachability.m:391: error: 'NotReachable' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/Reachability.m:409: error: 'ReachableViaCarrierDataNetwork' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/Reachability.m:413: error: 'ReachableViaWiFiNetwork' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/Reachability.m:414: warning: control reaches end of non-void function
+/Users/chrmai1/Desktop/Linux/Reachability.m: At top level:
+/Users/chrmai1/Desktop/Linux/Reachability.m:416: error: expected ')' before 'NetworkStatus'
+/Users/chrmai1/Desktop/Linux/Reachability.m: In function '-[Reachability internetConnectionStatus]':
+/Users/chrmai1/Desktop/Linux/Reachability.m:439: error: 'NotReachable' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/Reachability.m:441: error: 'ReachableViaCarrierDataNetwork' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/Reachability.m:445: error: 'ReachableViaWiFiNetwork' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/Reachability.m:449: warning: control reaches end of non-void function
+/Users/chrmai1/Desktop/Linux/Reachability.m: At top level:
+/Users/chrmai1/Desktop/Linux/Reachability.m:451: error: expected ')' before 'NetworkStatus'
+/Users/chrmai1/Desktop/Linux/Reachability.m: In function '-[Reachability localWiFiConnectionStatus]':
+/Users/chrmai1/Desktop/Linux/Reachability.m:468: error: 'ReachableViaWiFiNetwork' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/Reachability.m:471: error: 'NotReachable' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/Reachability.m:472: warning: control reaches end of non-void function
+/Users/chrmai1/Desktop/Linux/Reachability.m: At top level:
+/Users/chrmai1/Desktop/Linux/Reachability.m:498: error: cannot find interface declaration for 'ReachabilityQuery'

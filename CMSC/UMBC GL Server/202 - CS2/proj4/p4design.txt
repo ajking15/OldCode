@@ -1,0 +1,17 @@
+CMSC 202 Spring 2008
+Project 4 Design Questions
+
+Copy this file to your directory and edit it to answer the questions below.
+These questions are worth 10% of the project grade.
+Be sure to submit your answers before the project design due date listed in the project description.
+
+
+1. Describe the Creature hierarchy that you plan to use for this project.
+Be sure to indicate all classes, their parent class if any, and their child class(es) if any.
+Creature:Dragon: RedDragon/GreenDragon
+
+Creature:MagicalCreatue:Wizard/Siren
+
+Creature:OtherCreature:Archer/Knight/PoisonFrog
+
+There are middleground extensions to encapsulate similar creatures with similar special abilites or attributes.

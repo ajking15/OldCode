@@ -1,0 +1,10 @@
+1c1
+< rawr rawr rawr
+---
+> this is a test
+3c3
+< huzzah
+\ No newline at end of file
+---
+> yes! a test
+\ No newline at end of file

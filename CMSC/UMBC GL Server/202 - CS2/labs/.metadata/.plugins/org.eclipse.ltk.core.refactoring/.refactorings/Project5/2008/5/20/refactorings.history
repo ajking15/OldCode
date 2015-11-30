@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete 1 element(s) from project 'Project5'&#10;- Original project: 'Project5'&#10;- Original element: 'p5CargoCmds.txt'" description="Delete element" element1="src/p5CargoCmds.txt" elements="0" flags="589830" id="org.eclipse.jdt.ui.delete" resources="1" stamp="1210709273534" subPackages="false" version="1.0"/>
+<refactoring accessors="true" comment="Delete 1 element(s) from project 'Project5'&#10;- Original project: 'Project5'&#10;- Original element: 'proj5.Project5.java'" description="Delete element" element1="/src&lt;proj5{Project5.java" elements="1" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1210709875125" subPackages="false" version="1.0"/>
+</session>

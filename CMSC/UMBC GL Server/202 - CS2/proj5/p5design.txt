@@ -1,0 +1,46 @@
+CMSC 202 Spring 2008
+Project 5 Design Questions
+
+Copy this file to your directory and edit it to answer the questions below.
+These questions are worth 10% of the project grade.
+Be sure to submit your answers before the project design due date listed in the project description.
+
+1. Provide a description of the classes for cargo and people.
+In particular, list the private instance variables and public methods you plan to
+implement for each.
+
+Cargo Class:
+   Instance Variables:
+      Label
+      Weight
+      Height
+      Width
+      Length
+   Public Methods:
+      Print(); print out the details of the cargo(instance variables)
+
+People Class:
+   Instance Variables:
+      Name
+      Age
+      ID
+   Public Methods: 
+      Print(); print out the details of the person(instance Variable)
+
+2. For each item in the list of error conditions in the project description, specify
+whether or not your code will throw an exception.  If an exception will be thrown, specify
+the type of exception to be thrown.  If you choose not to throw an exception, explain why not.
+-Error with Command Line Arguments
+   will throw IllegalCommandLineArguments exception. Will be developed and thrown if there are an incorrect
+   number of arguments and/or if an argument is of an incorrect type. This is because the program will inevitably
+   crash is something were to go wrong with the command line arguments.
+
+-Trying to load a full aircraft or unload an empty aircraft
+   will not throw an exception. the attempted loading/unloading will be logged a message printed out to the user and the     program will continue.this is because an error like this is typical and nowhere near an exceptional situation
+
+-Trying to fly above the Max altitude/below the minimum altitude
+   will not throw an exception. the improper change in altitude will be recorded(will level off), a message printed to      the user, and the program will continue. This is because an improper change in altitude is not something that        threatens the stability of program and not deemed serious enough to warrant it's own exception.
+-Illogical Commands
+   An error will be thrown as illogical commands are a hazard and could result in program failure if not correctly dealt    with. IllegalCommandException will be developed and thrown and will display a message depending on the situation.
+
+   

@@ -1,0 +1,78 @@
+<!--
+
+  This is a sample ant build file for CMSC 341 projects.  There are 3 targets: 
+
+    clean - Remove class (*.class), backup (*~), and javadoc files
+    compile - Compile all source code
+    doc - Create javadoc files
+
+  The default project is compile.  That is, if you run ant with no arguments
+  it will compile your source code.  To run ant with a specific target give
+  the name of the target on the command line:
+
+    ant target_name
+
+  See comments below for more information on each target.
+
+  For more information on ant, see http://ant.apache.org/manual/.
+
+-->
+
+
+
+<project name="CMSC 341 project" default="compile" basedir=".">
+
+  <!-- Javadoc files go in a subdirectory named "doc" of the directory that
+       contains this build file. -->
+  <property name="doc.dir" value="doc/"/>
+
+
+
+  <target name="clean">
+
+    <!-- Delete entire javadoc directory -->
+    <delete dir="${doc.dir}"/>
+    <delete>
+
+      <!-- Delete class files -->
+      <fileset defaultexcludes="no" dir="." includes="*.class"/>
+      <fileset defaultexcludes="no" dir="." includes="**/*.class"/>
+
+      <!-- Delete backup files -->
+      <fileset defaultexcludes="no" dir="." includes="*~"/>
+      <fileset defaultexcludes="no" dir="." includes="**/*~"/>
+
+    </delete>
+  </target>
+
+
+
+  <target name="compile">
+
+    <!-- Compile all java files in the directory tree rooted by the 
+         directory containing this build file. -->
+    <javac srcdir=".">
+    </javac>
+
+  </target>
+
+
+
+  <target name="doc">
+
+    <!-- Create a directory for the javadoc files -->
+    <mkdir dir="${doc.dir}"/>
+
+    <!-- Create javadoc files for all source code in the directory tree 
+         rooted by the directory containing this build file. -->
+    <javadoc sourcepath="." destdir="${doc.dir}">
+      <fileset dir=".">
+        <include name="**/*.java"/>
+      </fileset>
+    </javadoc>
+
+  </target>
+
+
+
+</project>

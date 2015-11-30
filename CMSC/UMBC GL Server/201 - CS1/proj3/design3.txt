@@ -1,0 +1,155 @@
+/******************************************************************************
+ ** File:      bookstore.h
+ ** Author:    Christopher Mai
+ ** Date:      10/31/07
+ ** Section:   0203
+ ** E-mail:    chrmai1@umbc.edu
+ **
+ **  This file holds all #defines and function prototypes to be used in 
+ ** conjunction with bookstore.c and proj3.c
+ *****************************************************************************/
+
+/****************************************************************************
+** Project Design --
+**  The goal of this project is to design an online bookstore interface that
+** prints out an invoice only when something is bought. To complete this task
+** I am using a structure to keep track of all information including book
+** number, class level, isbn number, title, author, publisher, cost, copies,
+** number bought, and subtotal per book. 
+**  In the beginning the program accesses to functions to benefit the user
+** PrintGreeting and PrintInstructions to make sure that the user is fully
+** aware of the purpose and how to use this program. Then the user is 
+** requested which file is to be used for this program from which to draw all
+** of its information from. Then using the information from the file
+** the function calloc is used to obtain the necessary amount of memory from
+** the cpu to be run correctly. Then using a for loop all the information in
+** the inventory file is stored into their respective members of the 
+** structure.
+**  The actual interfacing of the program is done within a do-while loop.
+** First, the menu is printed via PrintMenu function then using GetValidBook
+** function to ensure a book is properly chosen. Then the number returned
+** by GetValidBook is used by DisplayBook which used in conjunction with the
+** information structure can be used to display the correct book. Then the 
+** function GetValidSale is called which uses the information on remaining
+** copies to establish a variable range to be chosen for number of books 
+** selected for purchase. Which is used by CalculateCost function to store
+** the subtotal for the book in its own structure member. This is done until
+** the user decides to quit. At that time functions CreateInvoice and
+** CreateNewInventory are called to do their jobs if they are required.
+****************************************************************************/
+
+/******************************************************************************
+** PrintGreeting --
+**  Prints greeting for this program and describes its function to the user
+**   Input:  void
+**   Output: void
+******************************************************************************/
+
+void PrintGreeting();
+
+/******************************************************************************
+** PrintInstructions --
+**  Prints instructions to the user to detail how to use this program
+**   Input:  void
+**   Output: void
+******************************************************************************/
+
+void PrintInstructions();
+
+/******************************************************************************
+** OpenInventoryFile --
+**  Opens the inventory file from which all information concerning books are
+**  scanned
+**   Input:  number of books pointer so it can be modified
+**   Output: numBooksPtr with value scanned from file
+******************************************************************************/
+
+FILE* OpenInventoryFile(int *numBooksPtr);
+
+/******************************************************************************
+** GetMemory --
+**  Obtains a specific amount of memory for use by this program
+**   Input:  number of books and bookstore structure
+**   Output: void
+******************************************************************************/
+
+BOOKSTORE* GetMemory(int *numBooksPtr, BOOKSTORE information);
+
+/******************************************************************************
+** ScanFile --
+**  Scans rest of inventory.dat for all information and is stored in struct
+**   Input:  *ifp, the number of books, bookstore structure
+**   Output: void
+******************************************************************************/
+
+void ScanFile(FILE *ifp, int *numBooksPtr, BOOKSTORE *information);
+
+/******************************************************************************
+** PrintMenu --
+**  Prints the menu which will be used for interfacing with the bookstore
+**   Input:  structure with all the information
+**   Output: void
+******************************************************************************/
+
+void PrintMenu(BOOKSTORE information);
+
+/*****************************************************************************
+** GetValidBook --
+**  Ensures an integer that is usable by the program to either display a book
+**  or quit the program
+**   Input:  void
+**   Output: integer for use by DisplayBook
+******************************************************************************/
+
+int GetValidBook();
+
+/*****************************************************************************
+** DisplayBook --
+**  Displays the book to the user with all relevant information
+**   Input:  information structure and bookNumber
+**   Output: void
+*****************************************************************************/
+
+void DisplayBook(int bookNumber, BOOKSTORE *information);
+
+/*****************************************************************************
+** GetValidSale --
+**  Ensures a proper integer input for a variable stock
+**   Input:  information structure
+**   Output: integer value used to calculate cost
+*****************************************************************************/
+
+int GetValidSale(BOOKSTORE *information);
+
+/****************************************************************************
+** CalculateCost --
+**  Calculates cost upon exiting the program
+**   Input:  information structure and book number
+**   Output: subtotal
+*****************************************************************************/
+
+double CalculateCost(BOOKSTORE *information, bookNumber);
+
+/****************************************************************************
+** CreateInvoice --
+**  Creates invoice upon exiting the program if something has been purchased
+**   Input:  subtotal calculated by CalculateCost function and book number
+**   Output: void
+*****************************************************************************
+
+void CreateInvoice(double subTotal, int booknumber);
+
+/****************************************************************************
+** CreateNewInventory --
+**  Creats newInventory upon exiting program with updated values
+**   Input:  information structure
+**   Output: void
+*****************************************************************************/
+
+void CreateNewInventory(BOOKSTORE *information);
+
+#define REQUIRED     1
+#define RECOMMENDED  0
+#define MIN          1
+#define MAX         19
+#define EXIT        -1

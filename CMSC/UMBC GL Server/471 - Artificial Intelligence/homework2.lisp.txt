@@ -1,0 +1,519 @@
+;;=======================================
+;;  Homework2
+;;  CMSC 471 Homeword #2
+;;  Code by Christopher Mai
+;;  September 2009
+;;=======================================
+
+;;=======================================
+;; Constants and Global Vars
+;;=======================================
+
+(defconstant MINX 0
+   "Minimum X dimension of the array/board")
+(defconstant MINY 0
+   "Minimum Y dimension of the array/board")
+(defvar expanded 0
+   "keeps track of the number of created nodes")
+(defvar closed '()
+   "keeps track of the used states")
+
+;;=======================================
+;; Custom Class - Move
+;;=======================================
+(defclass move ()
+   ((fill    :accessor move-fill
+             :initarg :fill)
+    (vehicle :accessor move-vehicle
+             :initarg :vehicle)
+    (free    :accessor move-free
+             :initarg :free)))
+
+;;=======================================
+;; Macros
+;;=======================================
+
+;;shorten the repeated call to access an array's contents at a certain point
+(defmacro access (board coords)
+        `(aref (game-board ,board) (x-coord ,coords) (y-coord ,coords)))
+
+;;shorten repeated call using individual coords not in a list
+(defmacro accessArray (board x y)
+   `(aref (game-board ,board) ,x ,y))
+
+;;=======================================
+;; Methods
+;;=======================================
+
+;;====================================
+;; All four move-xxx functions are 
+;;   used by legal moves to test if
+;;   a move is physically possible
+;;   basically these are my checkers
+;;   applied to blank squares
+;;   x-coord is vertical measure
+;;   y-coord is horizontal measure
+;;   Assuming max vehicle size is 3 (given rule)
+;;====================================
+
+;; Move-Right
+;; Operates on empty squares only
+;; Moves a vehicle to the left one square
+;; *Y is horizontal measure*
+;; (+ (y-coord coords) 1) refers to position right next to empty space
+;; (+ (y-coord coords) 2) two spaces to the right.
+;; (+ (y-coord coords) 3) three spaces to the right
+
+(defun move-right (game coords)
+  (if (not (null (access game coords)))    ;check if it's an empty space
+      (values nil nil)                       ;has a vehicle return nil
+      ;;checks to see if the position to the right is within the array
+      (if (> (+ (y-coord coords) 1) (- maxy 1))
+          (values nil nil)                   ;no position to the right    
+          ;;position to the right. check if vehicle
+          (if (null (accessArray game (x-coord coords) (+ (y-coord coords) 1)))
+              (values nil nil)               ;no vehicle
+              ;;there is a vehicle to the right. check horizontal
+              (if (> (+ (y-coord coords) 2) (- maxy 1))
+                  (values nil nil)           ;position to right out of bounds
+                  ;; otherwise within array check if same vehicle
+                  (if (not (equal (accessArray game (x-coord coords)
+                                                    (+ (y-coord coords) 2))
+                                  (accessArray game (x-coord coords)
+                                                    (+ (y-coord coords) 1))))
+                      ;;vehicle is different or position is empty
+                      (values nil nil)
+                      ;;vehicle at least lenght 2 found test for length 3
+                      (if (> (+ (y-coord coords) 3) (- maxy 1))
+			  ;;end of array reached. vehicle size 2
+			  (values (accessArray game (x-coord coords)
+                                                  (+ (y-coord coords) 1))
+                                (list (x-coord coords)
+                                      (+ (y-coord coords) 2)))
+			  ;;check if size 3 or just size 2
+			  (if (not (equal (accessArray game (x-coord coords)
+                                                     (+ (y-coord coords) 3))
+                                          (accessArray game (x-coord coords)
+                                                     (+ (y-coord coords) 2))))
+			      ;;size 2 vehicle
+			      (values (accessArray game (x-coord coords)
+                                                      (+ (y-coord coords) 1))
+                                    (list (x-coord coords)
+                                          (+ (y-coord coords) 2)))
+                              ;;size 3 vehicle
+			      (values (accessArray game (x-coord coords)
+                                                      (+ (y-coord coords) 1))
+                                    (list (x-coord coords)
+                                          (+ (y-coord coords) 3)))))))))))
+
+;; Move-Left
+;; Moves a vehicle to the right one square
+
+(defun move-left (game coords)
+  (if (not (null (access game coords)))    ;check if it's an empty space
+      (values nil nil)                       ;has a vehicle return nil
+      ;;checks to see if the position to the left is within the array
+      (if (< (- (y-coord coords) 1) miny)
+          (values nil nil)                   ;no position to the left    
+          ;;position to the left. check if vehicle
+          (if (null (accessArray game (x-coord coords) (- (y-coord coords) 1)))
+              (values nil nil)               ;no vehicle
+              ;;there is a vehicle to the left. check horizontal
+              (if (< (- (y-coord coords) 2) miny)
+                  (values nil nil)           ;position to left out of bounds
+                  ;; otherwise within array check if same vehicle
+                  (if (not (equal (accessArray game (x-coord coords)
+                                                    (- (y-coord coords) 2))
+                                  (accessArray game (x-coord coords)
+                                                    (- (y-coord coords) 1))))
+                      ;;vehicle is different or position is empty
+                      (values nil nil)
+                      ;;vehicle at least lenght 2 found test for length 3
+                      (if (< (- (y-coord coords) 3) miny)
+			  ;;end of array reached. vehicle size 2
+			  (values (accessArray game (x-coord coords)
+                                                  (- (y-coord coords) 1))
+                                (list (x-coord coords)
+                                      (- (y-coord coords) 2)))
+			  ;;check if size 3 or just size 2
+			  (if (not (equal (accessArray game (x-coord coords)
+                                                     (- (y-coord coords) 3))
+                                          (accessArray game (x-coord coords)
+                                                     (- (y-coord coords) 2))))
+			      ;;size 2 vehicle
+			      (values (accessArray game (x-coord coords)
+                                                      (- (y-coord coords) 1))
+                                    (list (x-coord coords)
+                                          (- (y-coord coords) 2)))
+                              ;;size 3 vehicle
+			      (values (accessArray game (x-coord coords)
+                                                      (- (y-coord coords) 1))
+                                    (list (x-coord coords)
+                                          (- (y-coord coords) 3)))))))))))
+
+;; Move-Up
+;; Moves a vehicle down one square
+;; up and down manipulate x instead of x
+;; decrements x
+
+
+(defun move-up (game coords)
+  (if (not (null (access game coords)))    ;check if it's an empty space
+      (values nil nil)                       ;has a vehicle return nil
+      ;;checks to see if the position above is within the array
+      (if (< (- (x-coord coords) 1) minx)
+          (values nil nil)                   ;no position above    
+          ;;position above. check if vehicle
+          (if (null (accessArray game (- (x-coord coords) 1) (y-coord coords)))
+              (values nil nil)               ;no vehicle
+              ;;there is a vehicle above. check vertical
+              (if (< (- (x-coord coords) 2) minx)
+                  (values nil nil)           ;position above out of bounds
+                  ;; otherwise within array check if same vehicle
+                  (if (not (equal (accessArray game (- (x-coord coords) 2)
+                                                    (y-coord coords))
+                                  (accessArray game (- (x-coord coords) 1)
+                                                    (y-coord coords))))
+                      ;;vehicle is different or position is empty
+                      (values nil nil)
+                      ;;vehicle at least lenght 2 found test for length 3
+                      (if (< (- (x-coord coords) 3) minx)
+			  ;;end of array reached. vehicle size 2
+			  (values (accessArray game (- (x-coord coords) 1)
+                                                  (y-coord coords))
+                                (list (- (x-coord coords) 2)
+                                      (y-coord coords)))
+			  ;;check if size 3 or just size 2
+			  (if (not (equal (accessArray game
+                                                     (- (x-coord coords) 3)
+                                                     (y-coord coords))
+                                          (accessArray game
+                                                     (- (x-coord coords) 2)
+                                                     (y-coord coords))))
+			      ;;size 2 vehicle
+			      (values (accessArray game (- (x-coord coords) 1)
+                                                      (y-coord coords))
+                                    (list (- (x-coord coords) 2)
+                                          (y-coord coords)))
+                              ;;size 3 vehicle
+			      (values (accessArray game (- (x-coord coords) 1)
+                                                      (y-coord coords))
+                                    (list (- (x-coord coords) 3)
+                                          (y-coord coords)))))))))))
+
+
+;; Move-Down
+;; Moves a vehicle up one square
+;; increments x
+
+(defun move-down (game coords)
+  (if (not (null (access game coords)))    ;check if it's an empty space
+      (values nil nil)                       ;has a vehicle return nil
+      ;;checks to see if the position below is within the array
+      (if (> (+ (x-coord coords) 1) (- maxx 1))
+          (values nil nil)                   ;no position below    
+          ;;position below. check if vehicle
+          (if (null (accessArray game (+ (x-coord coords) 1) (y-coord coords)))
+              (values nil nil)               ;no vehicle
+              ;;there is a vehicle below. check vertical
+              (if (> (+ (x-coord coords) 2) (- maxx 1))
+                  (values nil nil)           ;position to below out of bounds
+                  ;; otherwise within array check if same vehicle
+                  (if (not (equal (accessArray game (+ (x-coord coords) 2)
+                                                    (y-coord coords))
+                                  (accessArray game (+ (x-coord coords) 1)
+                                                    (y-coord coords))))
+                      ;;vehicle is different or position is empty
+                      (values nil nil)
+                      ;;vehicle at least lenght 2 found test for length 3
+                      (if (> (+ (x-coord coords) 3) (- maxx 1))
+			  ;;end of array reached. vehicle size 2
+			  (values (accessArray game (+ (x-coord coords) 1)
+                                                  (y-coord coords))
+                                (list (+ (x-coord coords) 2)
+                                      (y-coord coords)))
+			  ;;check if size 3 or just size 2
+			  (if (not (equal (accessArray game
+                                                     (+ (x-coord coords) 3)
+                                                     (y-coord coords))
+                                          (accessArray game
+                                                     (+ (x-coord coords) 2)
+                                                     (y-coord coords))))
+			      ;;size 2 vehicle
+			      (values (accessArray game (+ (x-coord coords) 1)
+                                                      (y-coord coords))
+                                    (list (+ (x-coord coords) 2)
+                                          (y-coord coords)))
+                              ;;size 3 vehicle
+			      (values (accessArray game (+ (x-coord coords) 1)
+                                                      (y-coord coords))
+                                    (list (+ (x-coord coords) 3)
+                                          (y-coord coords)))))))))))
+
+;; Legal-Moves
+;; Loops across the board and performs the four move 
+;;  operations on every position. collects
+;;  all valid moves in a list
+
+(defun legal-moves (game)
+ (setf legal nil) ;clear out my list of legal moves
+ ;;loop over the 2-d array
+  (loop for x from minx to (- maxx 1) do
+    (loop for y from miny to (- maxy 1) do
+       ;;check if move-right is an option
+        (multiple-value-bind (a b) (move-right game `(,x ,y))
+          (if (null a)
+              ;;if not nil
+              (setf RIGHT nil)
+              ;;otherwise make a list of a move object
+              (setf RIGHT (list (make-instance 'move
+                  :fill b
+                  :vehicle a
+                  :free `(,x ,y))))))
+        ;;check if left is legal
+	(multiple-value-bind (c d) (move-left game  `(,x ,y))
+	  (if (null c)
+              ;;if not nil
+              (setf LEFT nil)
+              ;;otherwise make a list of the move object
+              (setf LEFT (list (make-instance 'move
+                  :fill d
+                  :vehicle c
+                  :free `(,x ,y))))))
+        ;;check if moving up is an option
+	(multiple-value-bind (e f) (move-up game `(,x ,y))
+          (if (null e)
+              ;;if not nil
+              (setf UP nil)
+              ;;otherwise make a list of the move
+              (setf UP (list (make-instance 'move
+                 :fill f
+                 :vehicle e
+                 :free `(,x ,y))))))
+        ;;check if down is an option
+        (multiple-value-bind (g h) (move-down game  `(,x ,y))
+          (if (null g)
+              ;;if not nil
+	      (setf DOWN nil)
+              ;;otherwise make a list of the move
+              (setf DOWN (list (make-instance 'move
+                  :fill h
+                  :vehicle g
+                  :free `(,x ,y))))))
+        ;;add the moves to the list of legal. nil isn't apart of it
+	(setf legal (append legal RIGHT LEFT UP DOWN)))
+      ;;return legal
+      finally (return legal)))
+
+;; i think this was just checking something but i don't
+;; feel like deleting it
+(defun loop-check (game list)
+  (loop for x from minx to (- minx 1) collect
+    (loop for y from miny to (- miny 1) collect
+     (list x y))))
+
+;; Apply-Move
+;; Takes in a move represented as a triple 
+;; parent: game instance move derived from
+;; move: list containing the triple (vehicle move-to move-from)
+;; Returns:
+;; New Game Intance
+;;   Unique Name: gensym function
+;;   has copy of new game-board
+;;   has a link to parent
+;;   and depth 1 greater than parent 
+
+(defun apply-move (parent move)
+  ;;make game instance then update board
+  (let ((newName (gensym))) ;;use gensym for the name
+   ;;create a new game with link to parent, updated depth, unique name and board
+   (setf newGame (make-instance 'game
+                    :name  newName
+                    :board (copy-array (game-board parent))
+                    :parent parent
+                    :depth (+ (game-depth parent) 1))))
+  ;;update the board with these two setf aref calls
+  (setf (aref (game-board newGame) (x-coord (move-fill move))
+                                   (y-coord (move-fill move)))
+                                   nil)
+  (setf (aref (game-board newGame) (x-coord (move-free move))
+                                   (y-coord (move-free move)))
+                                   (move-vehicle move))
+  ;; set it to itself so it returns newGame
+  ;; probably a better way to do this
+  (setf newGame newGame))
+
+;;Basic-Search
+;; fringe is a list of nodes to be expanded while searching 
+;; returns a list of four pieces of info
+;;    success/fail
+;;    goal node found
+;;    # created nodes
+;;    # expanded nodes
+;; keep track of closed nodes
+
+;;don't know why depth is there i don't use it
+(defun basic-search (initial dataStruct &optional depth)
+  ;;reset my necessary lists and vars for repeated searches
+  ;;that don't interfere with each other
+  (setf expanded 0)
+  (setf closed `(,initial))
+  (setf fringe `(,initial))
+  (setf node nil)
+  ;;loop until a conclusion is found
+  (loop do
+    ;; check for failure in finding the success node
+    (if (null fringe)
+        (return (list "failure" nil (length closed) expanded))
+        ;; sets current node based off of data structure type
+        ;; node is a symbol of game not in a list
+        (if (equal dataStruct "stack")
+            (setf fringe (stack-help fringe))
+            (setf fringe (queue-help fringe))))
+   (if (goalp node)
+       ;;success
+       (return (list "Success" node (length closed) expanded))
+       ;;update my fringe
+       (setf fringe (append fringe (clean-expand (expand node)))))))
+
+(defun exhaustive-search (initial dataStruct &optional depth)
+  ;;reset my necessary lists and vars for repeated searches
+  ;;that don't interfere with each other
+  (setf expanded 0)
+  (setf closed `(,initial))
+  (setf fringe `(,initial))
+  (setf node nil)
+  ;;loop until a conclusion is found
+  (loop do
+    ;; check for failure in finding the success node
+    (if (null fringe)
+        (return (list "failure" nil (length closed) expanded))
+        ;; sets current node based off of data structure type
+        ;; node is a symbol of game not in a list
+        (if (equal dataStruct "stack")
+            (setf fringe (stack-help fringe))
+            (setf fringe (queue-help fringe))))
+  ;; (if (goalp node)
+       ;;success
+  ;;     (return (list "Success" node (length closed) expanded))
+       ;;update my fringe
+       (setf fringe (append fringe (clean-expand (expand node))))))
+
+;; Set-up
+;; used in my step by step testing of the code
+
+(defun set-up (initial)
+  (setf closed `(,initial))
+  (setf fringe `(,initial))
+  (setf node nil))
+
+;; Search-Test
+;; used to allow me to loop manually to find problems
+(defun search-test (dataStruct)
+  (if (null fringe)
+      (list "failure" nil (length closed) expanded)
+      (if (equal dataStruct "stack")
+          (setf fringe (stack-help fringe))
+          (setf fringe (queue-help fringe))))
+  (if (goalp node)
+      (list "Success" node (length closed) expanded)
+      (setf fringe (append fringe (clean-expand (expand node))))))
+
+;; Stack-Help
+;; helper function which sets the current node
+;; and fringe if searching in a stack based way
+
+(defun stack-help (fringe)
+  (setf node (car (cdr (q-dfs fringe))))
+  (setf fringe (car (q-dfs fringe))))
+
+;; Queue-Help
+;; helper function which sets the current node
+;; and fringe is searching in a queue fashion
+
+(defun queue-help (fringe)
+  (setf node (car (cdr (q-bfs fringe))))
+  (setf fringe (car (q-bfs fringe))))
+
+;; Expand
+;; Takes in a node and adds it' children to the front of the
+;; list containing all created nodes (non-filtered 
+
+(defun expand (node)
+  ;;destroying depth-limit im not caring about depth
+  (setf depth-limit 0)
+  ;; increase the size of my nodes expanded counter
+  (setf expanded (+ expanded 1))
+  ;; update my move-list
+  (setf moveList (legal-moves node))
+  ;;takes the moves and creates a list of game nodes with moves applied
+  (loop for x in moveList collect
+    (apply-move node x)))
+
+;; Clean-Expand
+;; takes in the list of potential game boards
+;; and cleans it out based of my existing list of expanded nodes
+
+(defun clean-expand (gamesList)
+  ;;reset my list of clean
+  (setf clean nil)
+  ;; this could just be a boolean
+  (setf exists 0)
+  ;; this wouldn't have to exist if i knew lisp better
+  (setf unique 0)
+  (if (null closed)
+      (setf clean gamesList)
+      (loop for x in gamesList do  ;list of potential moves
+        (loop for y in closed do   ;list of invalid moves
+	  (if (array-equal (game-board x) (game-board y))
+	      (setf exists (+ exists 1))   ;match found. exists ++
+              (setf unique (+ unique 1)))) ;not matched. unique ++ 
+	  (if (> exists 0)   ;if it exists
+	      (setf unique 0) ;don't add. basiccally a do nothing
+              ;;append to my list of clean nodes
+	      (setf clean (append clean `(,x))))
+        ;;no point to resetting unique 
+	(setf unique 0)
+        ;;resets exist
+	(setf exists 0)))
+  ;;update my list of created nodes(can't use again) with the clean nodes     
+  (setf closed (append clean closed))
+  ;; set clean to self so function returns clean
+  (setf clean clean))
+
+;; Q-DFS
+;; different from Q-BFS in that it uses a stack implementation
+;; returns last node in list stack
+
+(defun q-dfs (stack)
+  ;;creates a list with the last object removed and attached as a separate list
+  (setf stack `(,(reverse (cdr (reverse stack))) ,(car (last stack)))))
+
+;; DFS
+;; Wrapper calls Basic-Search with Q-DFS
+
+(defun dfs (initial)
+  (basic-search initial "stack")) 
+
+;; Q-BFS
+;; different from Q-DFS in that it uses a queue implementation
+;; returns first node in list queue
+
+
+(defun q-bfs (q)
+  ;;creates a list with the first object removed and attached as a separate list
+  (setf q `(,(cdr q) ,(car q))))
+
+;; BFS
+;; Wrapper calls Basic Search with Q-BFS
+
+(defun bfs (initial)
+  (basic-search initial "queue"))
+
+;; GOALP
+;; checks to see if game is in the goal state
+;; since board is 6x6 goal is always at 3x6
+;; or as in an array, which starts at 0,  2x5
+
+(defun goalp (game)
+  (equal (aref (game-board game) 2 5) 'g))

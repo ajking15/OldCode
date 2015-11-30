@@ -1,0 +1,248 @@
+/****************************************************************************
+** File: design2.txt
+** Author: Christopher Mai
+** Date: 10/08/07
+** Section: 0203
+** E-mail: chrmai1@umbc.edu
+**
+**  This is the design document for project 2. So this document contains
+** all function prototypes, #defines, and a complete design description.
+*****************************************************************************/
+
+/****************************************************************************
+** ProjectDesign --
+**  Program will make calls to PrintGreeting and PrintInstructions in that 
+** order. Then I will make a 10 x 10 char array which will be sent to the 
+** function InitializeArray to prepare the array for the game. First by 
+** setting all parts of the array to spaces, then placing the ships into
+** their respective positions.
+**  Then I will use a loop to print a 10 x 10 board of blank spaces. This loop
+** will also request of the player two valid ints for attack coordinates
+**  by the way of the function GetValidAttack which will compare
+** the coordinates given by the user to the array. Then depending on what
+** is in the array will print a X for hit, O for miss, or nothing but an 
+** error message if that spot was already fired upon. This loop will also
+** employ a counter to keep track of the turns left to the user. The loop 
+** will have the conditions of either running out of turns or hitting all the 
+** ships to terminate. Hits will be kept track of using a switch for the five
+** different cases, and five different counters corresponding to individual
+** ships which would be added together to reach a total to terminate. 
+**  At the loops end there will be an if statement depending on the outcome
+** of the loop. Either the player has sunk all five ships and a 
+** congratulatory message is displayed or the player loses and a losing message
+** is displayed along with the positions of the undamaged parts of the ship
+** will be displayed along with the misses and hits of the player.
+**  Two arrays will be used for this program one will store the positions of 
+** all five ships and all hits and misses associated with the game. While the 
+** other will only store the hits and misses which will make it easier to print
+** out all necessary data for the game.
+*****************************************************************************/
+
+/****************************************************************************
+** PrintGreeting --
+**  Prints the greeting for this program
+**   Input:  void
+**   Output: void
+*****************************************************************************/
+
+void PrintGreeting();
+
+/****************************************************************************
+** PrintInstructions --
+**  Prints instructions for naval battle
+**   Input:  void
+**   Output: void
+*****************************************************************************/
+
+void PrintInstructions();
+
+/****************************************************************************
+** InitializeArray --
+**  Initializes the array of chars to hold all spaces
+**   Input:  array
+**   Output: initialized array with ship placement
+****************************************************************************/
+
+char InitializeArray(char array[][10]);
+
+/****************************************************************************
+** PlaceSubmarine --
+**  Places submarine into the array
+**   Input:  master array which holds ships positions
+**   Output: void
+*****************************************************************************/
+
+void PlaceSubmarine(char array[][10]);
+
+/****************************************************************************
+** PlaceAircraftCarrier --
+**  Places aircraft carrier into the array
+**   Input:  master array which holds ship position
+**   Output: void
+*****************************************************************************/
+
+void PlaceAircraftCarrier(char array[][10]);
+
+/****************************************************************************
+** PlaceDestroyer --
+**  Places destroyer into the array
+**   Input:  master array which holds ship positions
+**   Output: void
+*****************************************************************************/
+
+void PlaceDestroyer(char array[][10]);
+
+/****************************************************************************
+** PlaceCruiser --
+**  Places cruiser into the array
+**   Input:  master array which holds ship positions
+**   Output: void
+*****************************************************************************/
+
+void PlaceCruiser(char array[][10]);
+
+/****************************************************************************
+** PlaceBattleship --
+**  Places battleship into the array
+**   Input:  master array which holds ship positions
+**   Output: void
+*****************************************************************************/
+
+void PlaceBattleship(char array[][10]);
+
+/***************************************************************************
+** GetValidInt --
+**  Gets an int within a desired range
+**   Input:  min and max values for desired range
+**   Output: a validated int
+****************************************************************************/
+
+int GetValidInt(int min, int max);
+
+/***************************************************************************
+** GetValidAttack --
+**  Controls turn counter, and decides hit/miss or already hit
+**   Input:  turn counter 
+**   Output: modified turn counter
+****************************************************************************/
+
+int GetValidAttack(int turnCounter);
+
+/***************************************************************************
+** PlaceShips --
+**  Takes the array and calls five other place ship functions to place
+**  into arrays
+**   Input:  master array
+**   output: void
+***************************************************************************/
+
+void PlaceShips(char array[][10]);
+
+/**************************************************************************
+** PrintBoard --
+**  Prints out the board for the player to see
+**   Input:  the array values to fill the board
+**   Output: void
+***************************************************************************/
+
+void PrintBoard(char array[][10]);
+
+/***************************************************************************
+ ** CheckShips --
+ **  Checks for which ships are sunk to signal game end
+ **   Input:  board array
+ **   Output: total number of arrays
+ ***************************************************************************/
+
+int CheckShips(char array[][10]);
+
+/***************************************************************************
+ ** CheckAircraft --
+ **  Checks for aircraft hit condition
+ **   Input:  board array and ship counter
+ **   Output: number to help determine game end
+ ***************************************************************************/
+
+int CheckAircraft(char array[][10], int ship);
+
+/***************************************************************************
+ ** CheckBattleship --
+ **  Checks battleship hit condition
+ **   Input:  board array and ship counter
+ **   Output: number to help determine game end
+ ***************************************************************************/
+
+int CheckBattleship(char array[][10], int ship);
+
+/****************************************************************************
+ ** CheckCruiser --
+ **  Checks cruiser hit condition
+ **   Input:  board array and ship counter
+ **   Output: number to help determine game end
+ ****************************************************************************/
+
+int CheckCruiser(char array[][10], int ship);
+
+/****************************************************************************
+ ** CheckDestroyer --
+ **  Checks destroyer hit condition
+ **   Input:  board array and ship counter
+ **   Output: number to help determine game end
+ ****************************************************************************/
+
+int CheckDestroyer(char array[][10], int ship);
+
+/****************************************************************************
+ ** CheckSubmarine --
+ **  Checks submarine hit condition
+ **   Input:  board array and ship counter
+ **   Output: number to help determine game end
+ ***************************************************************************/
+
+int CheckSubmarine(char array[][10], int ship);
+
+
+/* #defines for core game */
+#define MIN    0
+#define MAX    9
+#define TURNS  40
+
+/* #defines for carrier placement */
+#define LENGTHCARRIER      5
+#define BOWROWCARRIER      0
+#define BOWCOLCARRIER      5
+#define STERNROWCARRIER    4
+#define STERNCOLCARRIER    5
+#define AIRCRAFTCARRIER	  'A'
+
+/* #define for battleship placement */
+#define LENGTHBATTLE       4
+#define BOWROWBATTLE       7
+#define BOWCOLBATTLE       6
+#define STERNROWBATTLE     7
+#define STERNCOLBATTLE     9
+#define BATTLESHIP	  'B'
+
+/* #define for cruiser placement */
+#define LENGTHCRUISER      2
+#define BOWROWCRUISER      1
+#define BOWCOLCRUISER      8
+#define STERNROWCRUISER    1
+#define STERNCOLCRUISER    9
+#define CRUISER		  'C'
+
+/* #define for destroyer placement */
+#define LENGTHDESTROYER    3
+#define BOWROWDESTROYER    4
+#define BOWCOLDESTROYER    1
+#define STERNROWDESTROYER  4
+#define STERNCOLDESTROYER  3
+#define DESTROYER	  'D'
+
+/* #define for submarine placement*/
+#define LENGTHSUB          3  
+#define BOWROWSUB          7
+#define BOWCOLSUB          0
+#define STERNROWSUB        9
+#define STERNCOLSUB        0
+#define SUBMARINE	  'S'

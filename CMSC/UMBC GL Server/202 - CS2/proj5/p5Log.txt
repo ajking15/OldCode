@@ -1,0 +1,57 @@
+Load: Bill's Beans 1200   20 x 15 x 30
+Load: Tammy's Tomatoes 600   6 x 6 x 6
+Load: Lots of Meat 3000   20 x 20 x 20
+Load: Chicago Bull's 1000   10 x 10 x 10
+Load: Ken's Cookies 1500   15 x 15 x 15
+
+The plane is leaving UMBC and flying to Chicago
+
+Current altitude increased by 500 current altitude: 500
+
+Current altitude decreased by 200 current altitude: 300
+
+
+---Transport Status---
+Max Altitude: 3500
+Min Altitude: 0
+Max Capacity: 5
+Current Altitude: 300
+Current Position: Air
+Destination: Chicago
+
+---Contents Status---
+Bill's Beans 1200   20 x 15 x 30
+Chicago Bull's 1000   10 x 10 x 10
+Ken's Cookies 1500   15 x 15 x 15
+Lots of Meat 3000   20 x 20 x 20
+Tammy's Tomatoes 600   6 x 6 x 6
+
+Plane has landed at Chicago
+
+
+---Transport Status---
+Max Altitude: 3500
+Min Altitude: 0
+Max Capacity: 5
+Current Altitude: 0
+Current Position: Chicago
+Destination: None
+
+---Contents Status---
+Bill's Beans 1200   20 x 15 x 30
+Chicago Bull's 1000   10 x 10 x 10
+Ken's Cookies 1500   15 x 15 x 15
+Lots of Meat 3000   20 x 20 x 20
+Tammy's Tomatoes 600   6 x 6 x 6
+
+Plane is grounded, climbing impossible. Takeoff first
+
+Plane is grounded, descent impossible
+Transport is full, cannot load: Linda's Lace 200   20 x 30 x 40
+Item: Martha's Minks has not been found
+Item: Chicago Bull's has been removed.
+Item: Bill's Beans has been removed.
+Item: Lots of Meat has been removed.
+Item: Tammy's Tomatoes has been removed.
+Item: Ken's Cookies has been removed.
+Cannot unload, the plane is empty

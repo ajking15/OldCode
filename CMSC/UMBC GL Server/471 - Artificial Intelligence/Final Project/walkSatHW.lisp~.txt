@@ -1,0 +1,249 @@
+;;-------------------------------------------------------------------------
+;; Stubs of functions students should write for WalkSAT implementation,
+;; Final Project, CMSC 471, Fall 2009
+;; Christopher Mai
+;; Should be a fairly straightforward rewriting of the
+;; pseudocode given by Russell & Norvig.  You'll want
+;; to start by using COLLECT-VARS to get a list of all of
+;; the variables in the clauses.
+;; Hints:  
+;;   Look at the functions I've provided in walksat-utils.lisp
+;;     and the other stubs below -- most of the steps in the
+;;     pseudocode WalkSAT algorithm can be done by calling one
+;;     of those functions.
+;;   A good way to do action A "with probability p" is to
+;;     generate a random number between 0 and 1, and perform
+;;     action A if the random number is between 0 and p.
+(defun walksat (clauses p max_flips)
+  "Implements the WalkSAT algorithm as shown in R&N Figure 7.17.
+   Returns two values:  the satisfying model (or NIL if none found) 
+   and the number of assignments tried (in the range [1, MAX_FLIPS])"
+   (setf vrs (collect-vars clauses))
+   (setf  model (random-assts vrs))
+   ;(print model)
+   (loop for i from 0 to max_flips do
+         (progn (if(null (false-clauses model clauses))
+		   (progn (print "success") 
+			  (print i)
+			  (return  model)))
+		;;    (return model))
+		(setf cls (random-false-clause model clauses))
+		(if (< (random 1.0) p)
+		;flip value for randomly selected var
+                (setf model (flip (random-element vrs) model))
+                ;(setf model (flip (random-var cls) model))
+		;flip var from choose-max-sat
+                (setf model (flip (choose-max-sat vrs clauses model) model)))
+		(if (= i max_flips)
+		    (return nil))))
+  ; (print model)
+;  (print "failure")
+)
+
+
+;; Hint:  See note in walksat-utils.lisp about Lisp's RANDOM
+;; function.  (random 0.5) may be useful here.
+
+;;don't need
+
+(defun random-assts (vars)
+  "Create a set of random assignments."
+ (setf x nil)
+  (loop for i in vars do 
+	(progn (if(> (random 1.0) .5)
+		  (setf y `(,i T))
+		  (setf y `(,i nil)))
+	       (setf x (append x `(,y))))
+	)
+  (setf x x)
+  )
+
+;; Hint: you probably want to write FALSE-CLAUSES first
+;; and use it here.  RANDOM-ELEMENT may also be useful.
+
+;;not needed
+
+(defun random-false-clause (model clauses)
+  "Select a random clause from CLAUSES that is not satisfied by MODEL"
+  ;;(let* xy (false-clauses model clauses))
+  (setf xy (false-clauses model clauses))
+  (random-element xy)
+)
+
+;; Hint: it may be useful to use SATISFIES-ONE
+
+;;maybe return positions
+
+(defun false-clauses (model clauses)
+  "Return a list of all clauses in CLAUSES that are not satisfied by MODEL"
+ (setf x '())
+ (setf y nil)
+ (progn (loop for i in clauses do 
+	      (if (not (satisfies-one model `(,i)))
+		  (setf y i)
+                  (setf y nil))
+	      (if (not (null y))
+		  (setf x (append x `(,y))))))
+ (setf x x)
+)
+
+;; Hint:  There's no particular reason to try to be efficient
+;; or clever here.  How I implemented it:  Call FALSE-CLAUSES
+;; to get a list of all of the false clauses.  
+;; Then iterate through the list of variables, generating the
+;; model that results from flipping each one, and call 
+;; COUNT-SATISFIES to get the number of false clauses for
+;; each of these new models.  Keep track of which variables
+;; result in the smallest number of unsatisfied clauses.
+;; If there is a tie, return one of these "max-sat" (equivalently,
+;; "min-false-clause") variables at random.
+
+;;modified for flips
+
+(defun choose-max-sat (vars clauses model)
+  "Return the variable that maximizes the number of satisfied clauses 
+when flipped"
+  ;;list of variables. my clauses and the current model
+  (setf variables (car vars)) ;give first value for initialization
+  (setf xyz model)
+  (loop for i in vars do
+     (setf zyx (flip i xyz)) ;give zyx the new model
+     (if (< (length (false-clauses zyx clauses))
+	    (length (false-clauses xyz clauses)))
+	 (progn (setf xyz zyx)
+                (setf variables i))))
+   (setf variables variables)
+ )  
+   
+   ;;generating the model that results
+
+
+
+
+
+;;-------------------------------------------------------------------------
+;; Utilities for WalkSAT implementation, Homework 4, CMSC 471, Fall 2009
+;; (c) 2009 Marie desJardins
+;;
+;; Notes on representation conventions:
+;;   - A "model" is a list of variable assignments, of the form
+;;       ((var1 val1) (var2 val2) ...)
+;;     where the "val_i" values are each T or NIL
+;;   - A "clause" is any well-formed propositional Lisp-ish formula
+;;     using the connectives AND, OR, and NOT; for example:
+;;         (and (or (not a) b) (and (b (not c))))
+;;     Note that for WalkSAT to work properly, the clauses should
+;;     be in normal form; that is, they should be a single
+;;     disjunction of literals (where each literal is either a
+;;     variable, or "(not VAR)")
+;;   - A clause list is just a list of clauses -- it is implicitly
+;;     conjunctive (i.e., the clauses are ANDed together)
+
+
+;; Lisp tip:
+;;   (random N) where N is an integer returns a random integer in
+;;     the range [0, N-1]c
+;;   Note that (random X) where X is a non-integer positive number returns
+;;      a random real value in the range [0, X)
+
+;;this can be kept as is
+
+(defmacro random-element (l)
+  "Return a random element from list L"
+  `(nth (random (length ,l)) ,l))
+
+
+;; Lisp tips:
+;;   Note the use of the macro back-quote syntax.  By
+;;     using this syntax, we can use LET* to locally bind
+;;     the variables in the model (get it?  the model
+;;     has the same syntax as a LET* list)
+;;   LET* creates variables that are dynamic in scope rather
+;;     than local in scope -- that way if there is a function
+;;     call inside the LET* body, the variables will be
+;;     available inside those function calls.  It's a bit
+;;     of overkill here, but why not.
+;;   Note also that we have constructed our clauses using
+;;     Lisp syntax and connectives/functions (OR and NOT),
+;;     so once we bind the variables, we can just EVAL the
+;;     clause to get its truth value -- cool, huh?
+
+(defun satisfies-one (model clause)
+  "Return T if a model satisfies a single clause"
+  (eval `(let* ,model .
+	   ,clause)))
+
+;;either one of these modified to work on our list
+
+(defun satisfies-all (model clauses)
+  "Returns T if a model satisfies all clauses in a list of clauses"
+  (eval `(let* ,model
+	   (and . ,clauses)))
+  )
+
+;;unnecessary
+
+(defun count-satisfies (model clauses &aux (n 0))
+  "Return the number of clauses in a list of clauses satisfied by a model"
+  (loop for c in clauses
+	do (if (eval `(let* ,model ,c)) (incf n)))
+  n)
+
+
+;; Lisp tip:
+;;   Check out the recursion -- basically this is FLATTEN-LIST
+;;     in disgise, ripping the list apart to look for symbols
+;;     and glomming them onto a list as you go.  The variable
+;;     list gets passed around throughout the recursion because
+;;     it seems simpler to ADJOIN one symbol at a time than to
+;;     have to do a list merge on each return.
+
+;;maybe needs to be modified or not necessary at all
+
+(defun clause-vars (clause &optional (vars))
+  "Return a list of all variables that appear in a clause 
+   (i.e., all symbols that are not connectives)"
+  (cond ((null clause) vars)
+	((listp clause) (clause-vars (cdr clause)
+				     (clause-vars (car clause) vars)))
+	((member clause '(and or not)) vars)
+	;; Lisp tip: "adjoin" adds an item to a list if it is not
+	;; already there
+	(t (adjoin clause vars))))
+
+;;might need to be modified
+
+(defun random-var (clause)
+  "Pick a random variable from a clause"
+  (let ((vars (clause-vars clause)))
+    (random-element vars))
+)
+
+;;might be necessary. would need to be modified
+
+(defun collect-vars (clauses &aux (vars nil))
+  "Return a list of all of the variables in a list of clauses;
+   uses CLAUSE-VARS as a helper"
+  (loop for c in clauses
+	do (setf vars (clause-vars c vars)))
+  vars)
+
+
+;; Lisp tip:
+;;   Again I am taking advantage of the fact that the variable
+;;     value assignments in the model are actually the Lisp
+;;     symbols T and NIL, and using the Lisp NOT to flip their
+;;     values
+
+;;changed to be swap
+
+;;would need to take in a model and two vars?
+;;or 1 and 1 var randomly selected in this method
+(defun flip (var model)
+"Given a model and a variable, return a new model with the opposite
+ truth value for that variable (T -> NIL; NIL -> T)"
+  (loop for asst in model
+	collect (if (eq (car asst) var)
+		    ;; This is the variable: flip the value
+		    (list (car asst) (not (second asst)))
+		  asst)))

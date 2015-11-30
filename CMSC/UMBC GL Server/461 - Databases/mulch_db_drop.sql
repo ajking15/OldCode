@@ -1,0 +1,19 @@
+delete from seller;
+delete from all_orders;
+delete from orders_big_bird_forest;
+delete from orders_apple_orchard;
+delete from orders_eumc;
+delete from orders_harry_halls;
+delete from orders_harry_village;
+delete from orders_savages;
+delete from orders_saints;
+drop table seller cascade constraints;
+drop table all_orders;
+drop table orders_big_bird_forest;
+drop table orders_apple_orchard;
+drop table orders_eumc;
+drop table orders_harry_halls;
+drop table orders_harry_village;
+drop table orders_savages;
+drop table orders_saints;
+drop view summary_of_sellers

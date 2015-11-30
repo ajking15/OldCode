@@ -1,0 +1,33 @@
+!SESSION 2008-02-25 18:51:45.214 -----------------------------------------------
+eclipse.buildId=I20070625-1500
+java.version=1.6.0_02
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86 -data /afs/umbc.edu/users/c/h/chrmai1/home/202/labs
+
+!ENTRY org.eclipse.ui 4 4 2008-02-25 19:04:59.701
+!MESSAGE Invalid preference page path: Cache
+!SESSION 2008-03-24 18:42:38.604 -----------------------------------------------
+eclipse.buildId=I20070625-1500
+java.version=1.6.0_02
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86
+
+!ENTRY org.eclipse.ui.ide 4 4 2008-03-24 18:49:12.870
+!MESSAGE Error accessing marker type
+
+!ENTRY org.eclipse.core.resources 4 376 2008-03-24 18:49:12.887
+!MESSAGE Marker id 1220 not found.
+
+!ENTRY org.eclipse.ui.ide 4 4 2008-03-24 18:49:12.889
+!MESSAGE Error accessing marker type
+
+!ENTRY org.eclipse.core.resources 4 376 2008-03-24 18:49:12.890
+!MESSAGE Marker id 1220 not found.
+
+!ENTRY org.eclipse.ui.ide 4 4 2008-03-24 18:49:12.892
+!MESSAGE Error accessing marker type
+
+!ENTRY org.eclipse.core.resources 4 376 2008-03-24 18:49:12.894
+!MESSAGE Marker id 1220 not found.

@@ -1,0 +1,163 @@
+;;-----------------------------------------
+;;Final Project, CMSC, Fall 2009
+;;-----------------------------------------
+
+;(defvar *closed* '())
+;;should take in a list of colors and a code length
+
+(defun walkSat (&optional (colors *colors*) (code-length *code-length*))
+  "Implementing a walkSat variation to solve the 
+   Mastermind Game"
+  
+  ;set our model. narrow our guess to a list of 
+  ;all the colors and their quantity
+  ;(setf tempGuess guess)
+  ;create a list of all the colors that are possible
+  ;(setf colors (collect-colors guess))
+  (setf *model* '())
+  (setf *closed* '())
+  (init-guess)
+  (setf guess *model*)
+  (setf *guesses* 0)
+  (multiple-value-setq (reds whites)
+		       (mm-score guess *code* colors))
+  (loop for i from 0 to 10000000 do
+	(progn
+	  (cond((equalp reds code-length)
+		(format t "walkSat guessed ~s correctly in ~s guesses!~%" guess *guesses*)
+		(return-from walkSat))
+	       (t (progn 
+		   
+		   ; (p "Before Max-sat")
+		    (multiple-value-setq (guess reds)
+					 (choose-max-sat guess reds)
+))))))
+)
+
+(defun set-up () 
+ (setf *model* '())
+  (setf *closed* '())
+  (init-guess)
+  (setf guess *model*)
+  (setf *guesses* 0)
+  (multiple-value-setq (reds whites)
+		       (mm-score guess))
+)
+
+(defun choose-max-sat (guess reds)
+  "Will choose next best flip"
+  (setf tempGuess (copy-list guess))
+  ;(pr "before while loop")
+  #|
+  (loop while (equalp boolean T) do 
+	(progn
+	  (setf boolean nil)
+	  (swap (random (length tempGuess))
+		(random (length tempGuess)))
+	  (check-closed tempGuess *closed*)))   
+|#
+   (if (> .4 (random 1.0))
+       (progn
+	 (setf pos 0)
+	 (loop for i in tempGuess do
+	       (diffPos pos tempGuess)
+	       (swap pos getPos)
+	       (multiple-value-setq (tRed tWhite)
+				    (mm-score tempGuess))
+	       (if(> tRed reds)
+		   (progn (setf reds tRed)
+			  (setf guess tempGuess)))
+	       (incf pos)))
+     (progn 
+       (swap (random (length tempGuess)) (random (length tempGuess)))
+       (multiple-value-setq (tRed tWhite)
+			    (mm-score tempGuess))
+       (if(> tRed reds)
+		   (progn (setf reds tRed)
+			  (setf guess tempGuess)))
+       (incf pos)))
+#|
+ ;    (swap (random (length tempGuess)) (random (length tempGuess)))
+	       (multiple-value-setq (tRed tWhite)
+		       (mm-score tempGuess))
+	       (setf arrgh (copy-list tempGuess))
+	       (setf huzzah (copy-list *closed*))
+	       (setf *closed* (append (copy-list huzzah) (list (copy-list arrgh))))
+  (if (> tRed reds)
+      ;yes equals tReds better
+      (progn (setf reds tRed)
+	     (setf guess tempGuess)))
+|#
+;(print reds)
+
+(values guess reds)
+)
+
+(defun diffPos (currPos currGuess)
+ ; (print currPos)
+  (setf ujk 0)
+  (setf bool T)
+  ;(print currGuess)
+  (loop while bool do
+	(setf ujk (random (length currGuess)))
+	(if (not (equalp (nth currPos currGuess) (nth ujk currGuess)))
+	    (progn
+	      (setf getPos ujk)
+	      (return-from diffPos))))
+#|
+  (loop for dfd in currGuess do     
+	;(print currPos)
+	(if (not (equalp (nth currPos currGuess) dfd))
+	    (progn
+	      (setf getPos ujk) 
+	      (return-from diffPos)))
+	(incf ujk))
+|#
+)
+
+(defun check-closed (tempGuess closed)
+ ; (print closed)
+  (loop for xyz in closed do
+	(progn
+		;(print "check closed")
+		;       (print *closed*)
+		      ; (print xyz)
+		      ; (print tempGuess)
+		      ; (print "tempGuess")
+		      ; (print tempGuess)
+	(if (equalp tempGuess xyz)
+		;	   (progn; (print "equal")
+	    (setf boolean T))))
+			;	  (return-from check-closed))))
+
+ ; nil
+)
+
+;;could be useful depending on how we implement guesses
+(defmacro random-pos (colList)
+  `(random (length ,colList))
+)
+
+
+(defmacro random-element (l)
+  "Return a random element from list L"
+  `(nth (random (length ,l)) ,l))
+
+(defun swap (pos1 pos2)
+  "given a model (and two positions?) swaps them"
+  ;no idea how to do this
+(setf tempColor (nth pos1 tempGuess))  
+	   (setf (nth pos1 tempGuess) (nth pos2 tempGuess))  
+         ; (print "start check")
+         ; (print "----------")
+	 ; (print *closed*)
+	 ; (print "----------")
+ (setf (nth pos2 tempGuess) tempColor)
+	 ; (print "++++++++++")
+	 ; (print *closed*)
+	 ; (print "++++++++++")
+  
+ 
+ 
+  (setf tempGuess tempGuess)
+)

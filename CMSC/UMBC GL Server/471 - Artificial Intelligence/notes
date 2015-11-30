@@ -1,0 +1,23 @@
+(funcall #'fn x) == (fn x)
+
+(mapcar #' integerp '(1 2 3))
+
+(mapcar #'+ '(1 2 3) '(4 5 6)) - adds them together (5 6 7)
+
+(mapcar #'* '(1 2 3) '(5 5 5)) - multiplies each one by 5
+
+(defun my5 (x) (* x 5))
+
+(mapcar #'my5 '(1 2 3))
+
+(mapcar #'(lambda (x) (* x 5)) '(1 2 3)) 
+
+apply same as funcall takes a list of parameters
+
+invoked macro doesn't add anything to the stack
+
+(defun macro m (x y)
+   `(+ ,x ,y))
+
+(defvar *graph*)
+(setf *graph* ((a b) ( b a))

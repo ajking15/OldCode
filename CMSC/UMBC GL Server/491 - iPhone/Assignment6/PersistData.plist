@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+
+	<!-- The descriptions for these locations have been taken from Wikipedia -->
+	<!-- The images are my own original photos                               -->
+	<!--                                                        Dan Hood     -->
+	
+	<array>
+		<dict>
+			<key>MapType</key>
+			<real>0.00</real>
+			<key>SelectedIndex</key>
+			<real>0.00</real>
+			<key>latitude</key>
+			<real>37.770072</real>
+			<key>longitude</key>
+			<real>-122.470296</real>
+			<key>CurrentLoc</key>
+			<string>NO</string>
+		</dict>	
+	</array>
+</plist>

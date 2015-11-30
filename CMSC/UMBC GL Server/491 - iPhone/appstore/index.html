@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <style type="text/css">
+      body {
+        font-family: Verdana,Arial,Helvetica,sans-serif;
+        font-size: 12px;
+        color: #494949;
+        text-align: center;
+        line-height: 170%;
+      }
+      #wrapper {
+        text-align: left;
+        width: 850px;
+        padding: 25px;
+        margin: 0 auto;
+      }
+      #header img {
+        float: left;
+        padding-right: 15px;
+      }
+      h3 {
+        font-family: Helvetica,Arial,sans-serif;
+        font-size: 140%;
+        margin: 2em 0 0 0;
+      }
+      #header h3 {
+        font-size: 150%;
+        margin-bottom: 10px;
+      }
+      #header h4 {
+        font-size: 120%;
+        margin-top: 10px;
+      }
+      p {
+        clear: both;
+      }
+      ul {
+        margin: 0.5em 0 1em;
+        padding: 0;
+      }
+      li {
+        margin: 0.4em 0 0.4em 1.5em;
+      }
+      .landscape, .portrait {
+        text-align: center;
+      }
+      .landscape .screenshot {
+        width: 488px;
+      }
+      .portrait .screenshot {
+        width: 328px;
+      }
+      .screenshot {
+        background-color: #F3F3F3;
+        border: 1px solid #DDDDDD;
+        margin: 10px auto 50px;
+        padding-top: 4px;
+        text-align: center;
+        -moz-border-radius: 3px;
+      }
+      .screenshot p {
+        font-size: 11px;
+        line-height: 17px;
+        margin: 0;
+        padding: 0 4px 5px;
+      }
+    </style>
+    <script type="text/javascript">
+    </script>
+  </head>
+  <body>
+    <div id="wrapper">
+
+      <div id="header">
+	<!-- TODO: enter your 57x57px PNG app icon here -->
+        <img src="linuxLogo.png" />
+
+	<!-- TODO: enter your app's name here -->
+        <h3>Linux Security App</h3>
+
+	<!-- TODO: enter your name(s) here -->
+        <h4>By Christopher Mai</h4>
+      </div>
+
+      <h3>Application Description</h3>
+      
+      <!-- TODO: enter your app's description/features here -->
+      <p>The Linux Security App is intended for Linux Users of all experience levels.</p>
+      <p> Included in this app are two major components, a guide and an IP scanner. The guide contains information to aid you in your use of linux. One section of the guide includes a wide variety of terminal commands so that you may run your system to its full potential. Section two details the basic steps involved in securing your linux box from external attacks. The third section details various security software that you may run in order to maximize the security of your system; information regarding installation and use of these systems isn't included. Section four details information regarding the various distributions of Linux available. Section 5 is a quick overview of the linux mascot Tux the penguin.</p>
+      <p>The second major component of this app is the IP Scanner. What this ip scanner does is that it takes an ip address or hostname and scans it to determine whether or not various system/servicess are running. Currently not included is the vulnerability database which was to be used in conjunction with the ipscanner in order to detail possible avenues of attack. Possibly added in a future update.</p>
+      
+      <ul>
+      	<li> Basic Linux Security Guide</li>
+        <li> IP Scanner - that implements partial tcp port scanning </li>
+        <li> Ability to save scan results for future reference</li>        
+      </ul>
+      <h3>Apple Frameworks Used</h3>
+
+      <!-- TODO: update to encompass any frameworks you've imported -->
+      <ul>
+        <li>CFNetwork</li>
+        <li>Core Graphics</li>
+        <li>Foundation</li>
+        <li>UIKit</li>
+      </ul>
+      <h3>Screenshots</h3>
+
+      <!-- TODO: use this template for portrait based screenshots -->
+      <!--       be sure to set the image and caption -->
+      <div class="portrait">
+        <div class="screenshot">
+          <img src="TitleScreen.png" />
+          <p>
+            Title Screen
+          </p>
+        </div>
+      </div>
+
+      <!-- TODO: use this template for portrait based screenshots -->
+      <!--       be sure to set the image and caption -->
+      <div class="portrait">
+        <div class="screenshot">
+          <img src="TheGuide.png" />
+          <p>
+            The Table of Contents
+          </p>
+        </div>
+      </div>
+      
+      <!-- TODO: use this template for portrait based screenshots -->
+      <!--       be sure to set the image and caption -->
+      <div class="portrait">
+        <div class="screenshot">
+          <img src="TheScanner.png" />
+          <p>
+            The IP Scanner
+          </p>
+        </div>
+      </div>
+      
+    </div>
+  </body>
+</html>

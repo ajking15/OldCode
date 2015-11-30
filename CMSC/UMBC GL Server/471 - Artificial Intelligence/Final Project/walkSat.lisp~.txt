@@ -1,0 +1,124 @@
+;;-----------------------------------------
+;;Final Project, CMSC, Fall 2009
+;;-----------------------------------------
+
+(defvar *closed* '())
+;;should take in a list of colors and a code length
+
+(defun walkSat (&optional (colors *colors*) (code-length *code-length*))
+  "Implementing a walkSat variation to solve the 
+   Mastermind Game"
+  
+  ;set our model. narrow our guess to a list of 
+  ;all the colors and their quantity
+  ;(setf tempGuess guess)
+  ;create a list of all the colors that are possible
+  ;(setf colors (collect-colors guess))
+  (setf *model* '())
+  (setf *closed* '())
+  (init-guess)
+  (setf guess *model*)
+  (setf *guesses* 0)
+  (multiple-value-setq (reds whites)
+		       (mm-score guess *code* colors))
+
+#|
+  (loop for i from 0 to 100000 do
+	(progn
+	  ;;guess with our initial guess
+	  (format t "Guessing ~s...~%" guess)
+	  (multiple-value-setq (reds whites)
+			       (mm-score guess *code* colors))
+	  (cond ((eq reds code-length)
+	      (format t "walkSat guessed ~s correctly in ~s guesses!~%" guess *guesses*)
+	      (return-from walkSat))
+	      (t (setf guess (choose-max-sat guess reds colors))))))
+
+
+|#
+  
+  (loop for i from 0 to 100000000 do
+	(progn
+	  (cond((equalp reds code-length)
+		(format t "walkSat guessed ~s correctly in ~s guesses!~%" guess *guesses*)
+		(return-from walkSat))
+	        (t (progn 
+		    (print "Before Max-sat")
+		    (setf guess (choose-max-sat guess reds colors)))))))
+)
+
+(defun make-guess (&optional (colors *colors*) (code-length *code-length*))
+  (loop for i in *colors* do
+	(print i))
+)
+
+(defun choose-max-sat (guess currScore colors)
+  "Will choose next best flip"
+  (setf tempGuess guess)
+  (setf boolean T)
+  (print "before while loop")
+  (loop while boolean do
+	(progn (setf tempGuess (swap (random (length tempGuess)) (random (length tempGuess)) tempGuess))
+	       (setf boolean nil)
+	       (print "before closed loop")
+	       (check-closed tempGuess)))
+		   
+
+	       (multiple-value-setq (tRed tWhite)
+		       (mm-score tempGuess *code* colors))
+  (setf *closed* (append *closed* `(,tempGuess)))
+  (if (> tRed reds)
+      ;yes equals tReds better
+      (progn (setf reds tRed)
+	     (setf guess tempGuess))
+      (progn (setf reds reds)
+	     (setf guess guess)))
+
+ 
+  (setf guess guess)
+)
+
+(defun check-closed (tempGuess)
+  (loop for i in *closed* do
+		     (progn
+		       (print i)
+		       (print "tempGuess")
+		       (print tempGuess)
+		       (if (equalp i tempGuess)
+			   (progn (print "equal")
+				  (setf boolean T)
+				  (return-from check-closed)))))
+)
+
+#|
+(defun collect-colors (model &optional (colors *colors*))
+  (setf colorList '())
+  (loop for i in colors do
+	(if (car (member i model))
+	    (setf colorList (append colorList i)))) 
+ (setf colorList colorList)
+)
+|#
+;;could be useful depending on how we implement guesses
+(defmacro random-pos (colList)
+  `(random (length ,colList))
+)
+
+
+(defmacro random-element (l)
+  "Return a random element from list L"
+  `(nth (random (length ,l)) ,l))
+
+;;a function that finds the colors in our guess
+(defun collect-vars (colors)
+  
+)
+
+(defun swap (pos1 pos2 tempGuess)
+  "given a model (and two positions?) swaps them"
+  ;no idea how to do this
+  (setf tempColor (nth pos1 tempGuess))
+  (setf (nth pos1 tempGuess) (nth pos2 tempGuess))
+  (setf (nth pos2 tempGuess) tempColor)
+  (setf tempGuess tempGuess)
+)

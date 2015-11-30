@@ -1,0 +1,746 @@
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m: In function 'ReadStreamClientCallBack':
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:45: warning: 'ASIHTTPRequest' may not respond to '-handleNetworkEvent:'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:45: warning: (Messages without a matching method signature
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:45: warning: will be assumed to return 'id' and accept
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:45: warning: '...' as arguments.)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m: In function '+[ASIHTTPRequest initialize]':
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:154: error: 'ASIRequestTimedOutErrorType' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:154: error: (Each undeclared identifier is reported only once
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:154: error: for each function it appears in.)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:155: error: 'ASIAuthenticationErrorType' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:156: error: 'ASIRequestCancelledErrorType' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:157: error: 'ASIUnableToCreateRequestErrorType' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:158: error: 'ASITooMuchRedirectionErrorType' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m: In function '-[ASIHTTPRequest initWithURL:]':
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:173: warning: 'ASIHTTPRequest' may not respond to '-setRequestMethod:'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:175: warning: 'ASIHTTPRequest' may not respond to '-setShouldPresentCredentialsBeforeChallenge:'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:176: warning: 'ASIHTTPRequest' may not respond to '-setShouldRedirect:'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:177: warning: 'ASIHTTPRequest' may not respond to '-setShowAccurateProgress:'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:178: warning: 'ASIHTTPRequest' may not respond to '-setShouldResetProgressIndicators:'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:179: warning: 'ASIHTTPRequest' may not respond to '-setAllowCompressedResponse:'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:180: warning: 'ASIHTTPRequest' may not respond to '-setDefaultResponseEncoding:'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:181: warning: 'ASIHTTPRequest' may not respond to '-setShouldPresentProxyAuthenticationDialog:'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:183: warning: 'ASIHTTPRequest' may not respond to '-setTimeOutSeconds:'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:184: warning: 'ASIHTTPRequest' may not respond to '-setUseSessionPersistance:'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:185: warning: 'ASIHTTPRequest' may not respond to '-setUseCookiePersistance:'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:186: warning: 'ASIHTTPRequest' may not respond to '-setValidatesSecureCertificate:'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:187: warning: 'ASIHTTPRequest' may not respond to '-setRequestCookies:'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:188: warning: 'ASIHTTPRequest' may not respond to '-setDidFinishSelector:'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:189: warning: 'ASIHTTPRequest' may not respond to '-setDidFailSelector:'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:190: warning: 'ASIHTTPRequest' may not respond to '-setURL:'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m: In function '-[ASIHTTPRequest dealloc]':
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:202: warning: 'ASIHTTPRequest' may not respond to '-setAuthenticationChallengeInProgress:'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:203: error: 'requestAuthentication' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:206: error: 'proxyAuthentication' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:209: error: 'request' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:213: error: 'userInfo' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:214: error: 'mainRequest' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:215: error: 'postBody' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:216: error: 'compressedPostBody' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:217: error: 'error' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:218: error: 'requestHeaders' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:219: error: 'requestCookies' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:220: error: 'downloadDestinationPath' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:221: error: 'temporaryFileDownloadPath' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:222: error: 'fileDownloadOutputStream' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:223: error: 'username' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:224: error: 'password' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:225: error: 'domain' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:226: error: 'authenticationRealm' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:227: error: 'authenticationScheme' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:228: error: 'requestCredentials' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:229: error: 'proxyHost' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:230: error: 'proxyUsername' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:231: error: 'proxyPassword' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:232: error: 'proxyDomain' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:233: error: 'proxyAuthenticationRealm' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:234: error: 'proxyAuthenticationScheme' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:235: error: 'proxyCredentials' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:236: error: 'url' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:237: error: 'authenticationLock' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:238: error: 'lastActivityTime' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:239: error: 'responseCookies' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:240: error: 'rawResponseData' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:241: error: 'responseHeaders' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:242: error: 'requestMethod' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:243: error: 'cancelledLock' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:244: error: 'postBodyFilePath' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:245: error: 'compressedPostBodyFilePath' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:246: error: 'postBodyWriteStream' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:247: error: 'postBodyReadStream' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:248: error: 'PACurl' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:249: error: 'responseStatusMessage' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m: In function '-[ASIHTTPRequest addRequestHeader:value:]':
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:258: error: 'requestHeaders' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:259: warning: 'ASIHTTPRequest' may not respond to '-setRequestHeaders:'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m: In function '-[ASIHTTPRequest buildPostBody]':
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:268: warning: 'ASIHTTPRequest' may not respond to '-haveBuiltPostBody'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:273: warning: 'ASIHTTPRequest' may not respond to '-postBodyFilePath'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:283: warning: 'ASIHTTPRequest' may not respond to '-shouldCompressRequestBody'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:285: warning: 'ASIHTTPRequest' may not respond to '-postBodyFilePath'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:285: warning: 'ASIHTTPRequest' may not respond to '+compressDataFromFile:toFile:'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:288: warning: 'ASIHTTPRequest' may not respond to '-postBodyFilePath'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:290: warning: 'ASIHTTPRequest' may not respond to '-setPostLength:'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:292: error: 'ASIFileManagementError' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:292: error: 'error' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:292: warning: 'ASIHTTPRequest' may not respond to '-failWithError:'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:298: warning: 'ASIHTTPRequest' may not respond to '-shouldCompressRequestBody'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:299: warning: 'ASIHTTPRequest' may not respond to '-postBody'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:299: warning: 'ASIHTTPRequest' may not respond to '+compressData:'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:300: warning: 'ASIHTTPRequest' may not respond to '-setPostLength:'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:302: warning: 'ASIHTTPRequest' may not respond to '-postBody'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:302: warning: 'ASIHTTPRequest' may not respond to '-setPostLength:'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:306: warning: 'ASIHTTPRequest' may not respond to '-postLength'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:307: error: 'requestMethod' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:308: warning: 'ASIHTTPRequest' may not respond to '-setRequestMethod:'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:310: warning: 'ASIHTTPRequest' may not respond to '-postLength'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:312: warning: 'ASIHTTPRequest' may not respond to '-setHaveBuiltPostBody:'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m: In function '-[ASIHTTPRequest setupPostBody]':
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:318: warning: 'ASIHTTPRequest' may not respond to '-shouldStreamPostDataFromDisk'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:319: warning: 'ASIHTTPRequest' may not respond to '-postBodyFilePath'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:320: warning: 'ASIHTTPRequest' may not respond to '-setPostBodyFilePath:'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:321: warning: 'ASIHTTPRequest' may not respond to '-setDidCreateTemporaryPostDataFile:'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:324: warning: 'ASIHTTPRequest' may not respond to '-postBodyFilePath'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:328: warning: 'ASIHTTPRequest' may not respond to '-postBody'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:329: warning: 'ASIHTTPRequest' may not respond to '-setPostBody:'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m: In function '-[ASIHTTPRequest appendPostData:]':
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:340: warning: 'ASIHTTPRequest' may not respond to '-shouldStreamPostDataFromDisk'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:343: warning: 'ASIHTTPRequest' may not respond to '-postBody'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m: In function '-[ASIHTTPRequest appendPostDataFromFile:]':
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:360: warning: 'ASIHTTPRequest' may not respond to '-shouldStreamPostDataFromDisk'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:363: warning: 'ASIHTTPRequest' may not respond to '-postBody'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m: In function '-[ASIHTTPRequest setDelegate:]':
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:372: error: 'delegate' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m: In function '-[ASIHTTPRequest setQueue:]':
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:379: error: 'queue' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m: In function '-[ASIHTTPRequest cancel]':
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:395: warning: 'ASIHTTPRequest' may not respond to '-isCancelled'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:400: warning: 'ASIHTTPRequest' may not respond to '-failWithError:'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:406: warning: 'NSObject' may not respond to '-cancel'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m: In function '-[ASIHTTPRequest responseString]':
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:415: warning: 'ASIHTTPRequest' may not respond to '-responseData'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m: In function '-[ASIHTTPRequest responseData]':
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:432: warning: 'ASIHTTPRequest' may not respond to '+uncompressZippedData:'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m: In function '-[ASIHTTPRequest startAsynchronous]':
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:444: warning: 'ASIHTTPRequest' may not respond to '+sharedRequestQueue'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:444: warning: passing argument 1 of 'addOperation:' from distinct Objective-C type
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m: In function '-[ASIHTTPRequest main]':
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:460: warning: 'ASIHTTPRequest' may not respond to '-url'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:461: warning: 'ASIHTTPRequest' may not respond to '-failWithError:'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:467: warning: 'ASIHTTPRequest' may not respond to '-mainRequest'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:472: error: 'request' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:477: warning: implicit declaration of function 'CFHTTPMessageCreateRequest'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:477: warning: 'ASIHTTPRequest' may not respond to '-requestMethod'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:477: warning: 'ASIHTTPRequest' may not respond to '-url'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:477: warning: 'ASIHTTPRequest' may not respond to '-useHTTPVersionOne'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:477: error: 'kCFHTTPVersion1_0' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:477: error: 'kCFHTTPVersion1_1' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:479: warning: 'ASIHTTPRequest' may not respond to '-failWithError:'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:485: warning: 'ASIHTTPRequest' may not respond to '-mainRequest'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:486: warning: 'ASIHTTPRequest' may not respond to '-mainRequest'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:486: warning: no '-buildRequestHeaders' method found
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:490: warning: 'ASIHTTPRequest' may not respond to '-buildRequestHeaders'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:492: warning: 'ASIHTTPRequest' may not respond to '-applyAuthorizationHeader'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:496: warning: 'ASIHTTPRequest' may not respond to '-requestHeaders'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:497: warning: implicit declaration of function 'CFHTTPMessageSetHeaderFieldValue'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:497: warning: 'ASIHTTPRequest' may not respond to '-requestHeaders'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:500: warning: 'ASIHTTPRequest' may not respond to '-loadRequest'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:504: error: 'ASIUnhandledExceptionError' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:505: warning: 'ASIHTTPRequest' may not respond to '-failWithError:'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m: In function '-[ASIHTTPRequest applyAuthorizationHeader]':
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:514: warning: 'ASIHTTPRequest' may not respond to '-shouldPresentCredentialsBeforeChallenge'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:518: warning: 'ASIHTTPRequest' may not respond to '-useSessionPersistance'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:519: warning: 'ASIHTTPRequest' may not respond to '-findSessionAuthenticationCredentials'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:524: warning: 'ASIHTTPRequest' may not respond to '-username'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:524: warning: 'ASIHTTPRequest' may not respond to '-password'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:524: warning: 'ASIHTTPRequest' may not respond to '-domain'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:527: error: 'kCFHTTPAuthenticationSchemeBasic' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:528: warning: 'ASIHTTPRequest' may not respond to '-username'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:528: warning: 'ASIHTTPRequest' may not respond to '-password'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:528: warning: 'ASIHTTPRequest' may not respond to '-addBasicAuthenticationHeaderWithUsername:andPassword:'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:532: warning: 'ASIHTTPRequest' may not respond to '-requestHeaders'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:539: warning: implicit declaration of function 'CFHTTPMessageApplyCredentialDictionary'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:539: error: 'request' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:539: error: 'CFHTTPAuthenticationRef' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:539: error: expected ']' before 'objectForKey'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:540: warning: no '+removeAuthenticationCredentialsFromSessionStore:' method found
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:547: error: 'kCFHTTPAuthenticationUsername' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:547: error: 'kCFHTTPAuthenticationPassword' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:547: warning: 'ASIHTTPRequest' may not respond to '-addBasicAuthenticationHeaderWithUsername:andPassword:'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:550: warning: 'ASIHTTPRequest' may not respond to '-useSessionPersistance'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:551: warning: 'ASIHTTPRequest' may not respond to '-findSessionProxyAuthenticationCredentials'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:553: error: expected ']' before 'objectForKey'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:554: warning: no '+removeProxyAuthenticationCredentialsFromSessionStore:' method found
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m: In function '-[ASIHTTPRequest buildRequestHeaders]':
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:563: warning: 'ASIHTTPRequest' may not respond to '-haveBuiltRequestHeaders'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:566: warning: 'ASIHTTPRequest' may not respond to '-setHaveBuiltRequestHeaders:'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:568: warning: 'ASIHTTPRequest' may not respond to '-mainRequest'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:569: warning: 'ASIHTTPRequest' may not respond to '-mainRequest'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:569: warning: no '-requestHeaders' method found
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:570: warning: 'ASIHTTPRequest' may not respond to '-mainRequest'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:570: warning: no '-requestHeaders' method found
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:576: warning: 'ASIHTTPRequest' may not respond to '-useCookiePersistance'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:577: warning: 'ASIHTTPRequest' may not respond to '-url'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:579: warning: 'ASIHTTPRequest' may not respond to '-requestCookies'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:585: warning: 'ASIHTTPRequest' may not respond to '-mainRequest'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:586: warning: 'ASIHTTPRequest' may not respond to '-mainRequest'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:586: warning: no '-requestCookies' method found
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:588: warning: 'ASIHTTPRequest' may not respond to '-requestCookies'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:606: warning: 'ASIHTTPRequest' may not respond to '-requestHeaders'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:607: warning: 'ASIHTTPRequest' may not respond to '+defaultUserAgentString'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:615: warning: 'ASIHTTPRequest' may not respond to '-allowCompressedResponse'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:620: warning: 'ASIHTTPRequest' may not respond to '-shouldCompressRequestBody'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:625: warning: 'ASIHTTPRequest' may not respond to '-allowResumeForFileDownloads'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:625: warning: 'ASIHTTPRequest' may not respond to '-downloadDestinationPath'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:625: warning: 'ASIHTTPRequest' may not respond to '-temporaryFileDownloadPath'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:625: warning: 'ASIHTTPRequest' may not respond to '-temporaryFileDownloadPath'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:627: warning: 'ASIHTTPRequest' may not respond to '-temporaryFileDownloadPath'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:629: error: 'ASIFileManagementError' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:629: warning: 'ASIHTTPRequest' may not respond to '-temporaryFileDownloadPath'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:629: error: 'error' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:629: warning: 'ASIHTTPRequest' may not respond to '-failWithError:'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m: In function '-[ASIHTTPRequest startRequest]':
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:641: warning: 'ASIHTTPRequest' may not respond to '-isCancelled'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:654: warning: 'ASIHTTPRequest' may not respond to '-removeUploadProgressSoFar'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:658: warning: 'ASIHTTPRequest' may not respond to '-shouldResetProgressIndicators'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:660: warning: 'ASIHTTPRequest' may not respond to '-resetDownloadProgress:'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:663: warning: 'ASIHTTPRequest' may not respond to '-downloadDestinationPath'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:669: warning: 'ASIHTTPRequest' may not respond to '-shouldStreamPostDataFromDisk'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:669: warning: 'ASIHTTPRequest' may not respond to '-postBodyFilePath'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:669: warning: 'ASIHTTPRequest' may not respond to '-postBodyFilePath'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:673: warning: 'ASIInputStream' may not respond to '+inputStreamWithFileAtPath:'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:675: warning: 'ASIHTTPRequest' may not respond to '-postBodyFilePath'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:675: warning: 'ASIInputStream' may not respond to '+inputStreamWithFileAtPath:'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:677: error: 'readStream' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:677: warning: implicit declaration of function 'CFReadStreamCreateForStreamedHTTPRequest'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:677: error: 'request' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:681: warning: 'ASIHTTPRequest' may not respond to '-postBody'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:682: warning: 'ASIHTTPRequest' may not respond to '-shouldCompressRequestBody'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:683: warning: 'ASIInputStream' may not respond to '+inputStreamWithData:'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:684: warning: 'ASIHTTPRequest' may not respond to '-postBody'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:685: warning: 'ASIHTTPRequest' may not respond to '-postBody'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:685: warning: 'ASIInputStream' may not respond to '+inputStreamWithData:'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:690: warning: implicit declaration of function 'CFReadStreamCreateForHTTPRequest'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:696: error: 'ASIInternalErrorWhileBuildingRequestType' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:696: warning: 'ASIHTTPRequest' may not respond to '-failWithError:'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:701: error: 'validatesSecureCertificate' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:702: error: 'kCFStreamPropertySSLSettings' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:702: error: 'kCFStreamSSLValidatesCertificateChain' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:709: warning: 'ASIHTTPRequest' may not respond to '-proxyHost'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:709: warning: 'ASIHTTPRequest' may not respond to '-proxyPort'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:716: warning: 'ASIHTTPRequest' may not respond to '-PACurl'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:718: warning: 'ASIHTTPRequest' may not respond to '-url'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:718: warning: 'ASIHTTPRequest' may not respond to '-PACurl'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:718: warning: 'ASIHTTPRequest' may not respond to '+proxiesForURL:fromPAC:'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:728: warning: implicit declaration of function 'CFNetworkCopySystemProxySettings'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:734: warning: implicit declaration of function 'CFNetworkCopyProxiesForURL'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:734: warning: 'ASIHTTPRequest' may not respond to '-url'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:738: error: 'kCFProxyAutoConfigurationURLKey' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:739: warning: 'ASIHTTPRequest' may not respond to '-url'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:739: warning: 'ASIHTTPRequest' may not respond to '+proxiesForURL:fromPAC:'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:747: warning: 'ASIHTTPRequest' may not respond to '-failWithError:'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:754: error: 'kCFProxyHostNameKey' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:754: warning: 'ASIHTTPRequest' may not respond to '-setProxyHost:'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:755: error: 'kCFProxyPortNumberKey' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:755: warning: 'ASIHTTPRequest' may not respond to '-setProxyPort:'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:758: warning: 'ASIHTTPRequest' may not respond to '-proxyHost'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:758: warning: 'ASIHTTPRequest' may not respond to '-proxyPort'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:759: warning: 'ASIHTTPRequest' may not respond to '-proxyHost'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:759: error: 'kCFStreamPropertyHTTPProxyHost' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:759: warning: 'ASIHTTPRequest' may not respond to '-proxyPort'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:759: warning: passing argument 1 of 'numberWithInt:' makes integer from pointer without a cast
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:759: error: 'kCFStreamPropertyHTTPProxyPort' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:760: error: 'kCFStreamPropertyHTTPProxy' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:769: warning: 'ASIHTTPRequest' may not respond to '-failWithError:'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:783: warning: 'ASIHTTPRequest' may not respond to '-failWithError:'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:789: error: 'shouldResetProgressIndicators' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:791: error: 'showAccurateProgress' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:794: warning: 'ASIHTTPRequest' may not respond to '+isiPhoneOS2'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:795: error: 'postLength' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:800: warning: 'ASIHTTPRequest' may not respond to '-resetUploadProgress:'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m: In function '-[ASIHTTPRequest loadRequest]':
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:813: error: 'complete' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:821: warning: 'ASIHTTPRequest' may not respond to '-isCancelled'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:833: error: 'lastActivityTime' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:833: error: 'timeOutSeconds' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:838: error: 'totalBytesSent' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:838: error: 'postLength' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:838: error: 'uploadBufferSize' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:839: warning: 'ASIHTTPRequest' may not respond to '-failWithError:'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:855: warning: 'ASIHTTPRequest' may not respond to '-failWithError:'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:870: error: 'lastBytesSent' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:876: error: 'readStream' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:876: error: 'kCFStreamPropertyHTTPRequestBytesWrittenCount' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:879: warning: 'ASIHTTPRequest' may not respond to '-updateProgressIndicators'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m: In function '-[ASIHTTPRequest cancelLoad]':
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:899: error: 'readStream' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:913: warning: 'ASIHTTPRequest' may not respond to '-temporaryFileDownloadPath'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:917: warning: 'ASIHTTPRequest' may not respond to '-allowResumeForFileDownloads'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:918: warning: 'ASIHTTPRequest' may not respond to '-removeTemporaryDownloadFile'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:923: warning: 'ASIHTTPRequest' may not respond to '-authenticationChallengeInProgress'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:923: warning: 'ASIHTTPRequest' may not respond to '-didCreateTemporaryPostDataFile'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:924: warning: 'ASIHTTPRequest' may not respond to '-removePostDataFile'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:925: warning: 'ASIHTTPRequest' may not respond to '-setDidCreateTemporaryPostDataFile:'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m: In function '-[ASIHTTPRequest removeTemporaryDownloadFile]':
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:934: warning: 'ASIHTTPRequest' may not respond to '-temporaryFileDownloadPath'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:935: warning: 'ASIHTTPRequest' may not respond to '-temporaryFileDownloadPath'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:937: warning: 'ASIHTTPRequest' may not respond to '-temporaryFileDownloadPath'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:939: error: 'ASIFileManagementError' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:939: warning: 'ASIHTTPRequest' may not respond to '-temporaryFileDownloadPath'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:939: warning: 'ASIHTTPRequest' may not respond to '-failWithError:'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:942: warning: 'ASIHTTPRequest' may not respond to '-setTemporaryFileDownloadPath:'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m: In function '-[ASIHTTPRequest removePostDataFile]':
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:948: warning: 'ASIHTTPRequest' may not respond to '-postBodyFilePath'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:950: warning: 'ASIHTTPRequest' may not respond to '-postBodyFilePath'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:952: error: 'ASIFileManagementError' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:952: warning: 'ASIHTTPRequest' may not respond to '-postBodyFilePath'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:952: warning: 'ASIHTTPRequest' may not respond to '-failWithError:'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:954: warning: 'ASIHTTPRequest' may not respond to '-setPostBodyFilePath:'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:960: warning: 'ASIHTTPRequest' may not respond to '-failWithError:'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m: In function '-[ASIHTTPRequest HEADRequest]':
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:971: warning: 'ASIHTTPRequest' may not respond to '-url'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:972: warning: 'ASIHTTPRequest' may not respond to '-setMainRequest:'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:973: warning: 'ASIHTTPRequest' may not respond to '-setRequestMethod:'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m: In function '-[ASIHTTPRequest updateProgressIndicators]':
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:985: warning: 'ASIHTTPRequest' may not respond to '-mainRequest'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:986: warning: 'ASIHTTPRequest' may not respond to '-showAccurateProgress'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:987: warning: 'ASIHTTPRequest' may not respond to '-updateUploadProgress'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:988: warning: 'ASIHTTPRequest' may not respond to '-updateDownloadProgress'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m: In function '-[ASIHTTPRequest setUploadProgressDelegate:]':
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:999: error: 'uploadProgressDelegate' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m: In function '-[ASIHTTPRequest setDownloadProgressDelegate:]':
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1020: error: 'downloadProgressDelegate' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m: In function '-[ASIHTTPRequest resetUploadProgress:]':
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1041: error: 'uploadProgressDelegate' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1042: warning: 'ASIHTTPRequest' may not respond to '+setProgress:forProgressIndicator:'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m: In function '-[ASIHTTPRequest updateUploadProgress]':
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1049: warning: 'ASIHTTPRequest' may not respond to '-isCancelled'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1056: error: 'totalBytesSent' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1056: error: 'uploadBufferSize' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1056: error: 'postLength' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1059: error: 'queue' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1082: error: 'showAccurateProgress' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1083: error: 'lastBytesSent' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1103: error: 'uploadProgressDelegate' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1107: warning: 'ASIHTTPRequest' may not respond to '+isiPhoneOS2'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1113: warning: 'ASIHTTPRequest' may not respond to '+setProgress:forProgressIndicator:'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m: In function '-[ASIHTTPRequest resetDownloadProgress:]':
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1126: error: 'queue' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1136: error: 'downloadProgressDelegate' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1137: warning: 'ASIHTTPRequest' may not respond to '+setProgress:forProgressIndicator:'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m: In function '-[ASIHTTPRequest updateDownloadProgress]':
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1149: error: 'totalBytesRead' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1149: error: 'partialDownloadSize' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1153: error: 'queue' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1158: warning: 'ASIHTTPRequest' may not respond to '-showAccurateProgress'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1176: error: 'downloadProgressDelegate' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1180: warning: 'ASIHTTPRequest' may not respond to '+isiPhoneOS2'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1181: error: 'contentLength' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1187: warning: 'ASIHTTPRequest' may not respond to '+setProgress:forProgressIndicator:'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m: In function '-[ASIHTTPRequest removeUploadProgressSoFar]':
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1200: error: 'queue' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1201: error: 'lastBytesSent' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1212: error: 'uploadProgressDelegate' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1213: warning: 'ASIHTTPRequest' may not respond to '+setProgress:forProgressIndicator:'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m: In function '-[ASIHTTPRequest requestFinished]':
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1259: warning: 'ASIHTTPRequest' may not respond to '-error'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1259: warning: 'ASIHTTPRequest' may not respond to '-mainRequest'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1263: warning: 'ASIHTTPRequest' may not respond to '-queue'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1264: warning: 'ASIHTTPRequest' may not respond to '-queue'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1268: warning: 'ASIHTTPRequest' may not respond to '-didFinishSelector'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1268: warning: 'ASIHTTPRequest' may not respond to '-delegate'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1268: warning: 'ASIHTTPRequest' may not respond to '-didFinishSelector'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1268: warning: passing argument 1 of 'respondsToSelector:' from incompatible pointer type
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1269: warning: 'ASIHTTPRequest' may not respond to '-delegate'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1269: warning: 'ASIHTTPRequest' may not respond to '-didFinishSelector'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1269: warning: passing argument 1 of 'performSelectorOnMainThread:withObject:waitUntilDone:' from incompatible pointer type
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m: In function '-[ASIHTTPRequest failWithError:]':
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1279: warning: 'ASIHTTPRequest' may not respond to '-isCancelled'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1279: warning: 'ASIHTTPRequest' may not respond to '-error'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1284: warning: 'ASIHTTPRequest' may not respond to '-mainRequest'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1285: warning: 'ASIHTTPRequest' may not respond to '-mainRequest'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1286: warning: 'ASIHTTPRequest' may not respond to '-setError:'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1289: warning: 'ASIHTTPRequest' may not respond to '-queue'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1290: warning: 'ASIHTTPRequest' may not respond to '-queue'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1294: warning: 'ASIHTTPRequest' may not respond to '-setError:'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1297: warning: 'ASIHTTPRequest' may not respond to '-queue'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1298: warning: 'ASIHTTPRequest' may not respond to '-queue'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1302: warning: 'ASIHTTPRequest' may not respond to '-didFailSelector'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1302: warning: 'ASIHTTPRequest' may not respond to '-delegate'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1302: warning: 'ASIHTTPRequest' may not respond to '-didFailSelector'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1302: warning: passing argument 1 of 'respondsToSelector:' from incompatible pointer type
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1303: warning: 'ASIHTTPRequest' may not respond to '-delegate'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1303: warning: 'ASIHTTPRequest' may not respond to '-didFailSelector'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1303: warning: passing argument 1 of 'performSelectorOnMainThread:withObject:waitUntilDone:' from incompatible pointer type
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m: In function '-[ASIHTTPRequest readResponseHeadersReturningAuthenticationFailure]':
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1312: warning: 'ASIHTTPRequest' may not respond to '-setAuthenticationChallengeInProgress:'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1313: warning: 'ASIHTTPRequest' may not respond to '-setNeedsProxyAuthentication:'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1315: error: 'CFHTTPMessageRef' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1315: error: expected ';' before 'headers'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1316: warning: implicit declaration of function 'CFHTTPMessageIsHeaderComplete'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1316: error: 'headers' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1318: warning: implicit declaration of function 'CFHTTPMessageCopyAllHeaderFields'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1318: warning: initialization makes pointer from integer without a cast
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1322: warning: implicit declaration of function 'CFHTTPMessageGetResponseStatusCode'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1323: warning: implicit declaration of function 'CFHTTPMessageCopyResponseStatusLine'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1329: warning: 'ASIHTTPRequest' may not respond to '-setNeedsProxyAuthentication:'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1331: warning: 'ASIHTTPRequest' may not respond to '-setAuthenticationChallengeInProgress:'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1337: error: 'requestAuthentication' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1337: warning: 'ASIHTTPRequest' may not respond to '-username'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1337: warning: 'ASIHTTPRequest' may not respond to '-password'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1337: warning: 'ASIHTTPRequest' may not respond to '-useSessionPersistance'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1340: warning: 'ASIHTTPRequest' may not respond to '-username'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1340: error: 'kCFHTTPAuthenticationUsername' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1341: warning: 'ASIHTTPRequest' may not respond to '-password'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1341: error: 'kCFHTTPAuthenticationPassword' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1346: warning: 'ASIHTTPRequest' may not respond to '-url'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1347: error: 'kCFHTTPAuthenticationSchemeBasic' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1348: warning: no '+storeAuthenticationCredentialsInSessionStore:' method found
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1353: error: 'responseHeaders' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1358: warning: 'ASIHTTPRequest' may not respond to '-mainRequest'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1358: warning: 'ASIHTTPRequest' may not respond to '-allowCompressedResponse'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1358: warning: 'ASIHTTPRequest' may not respond to '-showAccurateProgress'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1358: warning: 'ASIHTTPRequest' may not respond to '-shouldResetProgressIndicators'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1359: warning: 'ASIHTTPRequest' may not respond to '-mainRequest'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1359: warning: no '-setShowAccurateProgress:' method found
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1364: warning: 'ASIHTTPRequest' may not respond to '-mainRequest'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1365: warning: 'ASIHTTPRequest' may not respond to '-mainRequest'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1368: warning: 'ASIHTTPRequest' may not respond to '-showAccurateProgress'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1368: warning: 'ASIHTTPRequest' may not respond to '-shouldResetProgressIndicators'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1373: warning: 'ASIHTTPRequest' may not respond to '-showAccurateProgress'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1373: warning: 'ASIHTTPRequest' may not respond to '-shouldResetProgressIndicators'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1374: warning: 'ASIHTTPRequest' may not respond to '-mainRequest'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1374: warning: no '-setShowAccurateProgress:' method found
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1381: warning: 'ASIHTTPRequest' may not respond to '-defaultResponseEncoding'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1381: warning: initialization makes integer from pointer without a cast
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1404: error: 'url' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1407: warning: 'ASIHTTPRequest' may not respond to '-useCookiePersistance'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1415: warning: 'ASIHTTPRequest' may not respond to '+addSessionCookie:'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1419: warning: 'ASIHTTPRequest' may not respond to '-shouldRedirect'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1422: warning: 'ASIHTTPRequest' may not respond to '-setRequestMethod:'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1423: warning: 'ASIHTTPRequest' may not respond to '-setPostBody:'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1424: warning: 'ASIHTTPRequest' may not respond to '-setPostLength:'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1425: warning: 'ASIHTTPRequest' may not respond to '-setRequestHeaders:'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1428: warning: 'ASIHTTPRequest' may not respond to '-setHaveBuiltRequestHeaders:'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1429: warning: 'ASIHTTPRequest' may not respond to '-url'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1429: warning: 'ASIHTTPRequest' may not respond to '-setURL:'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1435: warning: 'ASIHTTPRequest' may not respond to '-setRequestCookies:'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m: In function '-[ASIHTTPRequest saveProxyCredentialsToKeychain:]':
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1451: error: 'kCFHTTPAuthenticationUsername' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1451: error: 'kCFHTTPAuthenticationPassword' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1453: warning: 'ASIHTTPRequest' may not respond to '-proxyHost'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1453: warning: 'ASIHTTPRequest' may not respond to '-proxyPort'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1453: warning: 'ASIHTTPRequest' may not respond to '+saveCredentials:forProxy:port:realm:'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m: In function '-[ASIHTTPRequest saveCredentialsToKeychain:]':
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1460: error: 'kCFHTTPAuthenticationUsername' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1460: error: 'kCFHTTPAuthenticationPassword' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1463: warning: 'ASIHTTPRequest' may not respond to '-url'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1463: warning: 'ASIHTTPRequest' may not respond to '-url'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1463: warning: 'ASIHTTPRequest' may not respond to '-url'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1463: warning: 'ASIHTTPRequest' may not respond to '+saveCredentials:forHost:port:protocol:realm:'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m: In function '-[ASIHTTPRequest applyProxyCredentials:]':
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1471: error: 'proxyAuthentication' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1471: error: 'request' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1477: error: 'useKeychainPersistance' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1480: error: 'useSessionPersistance' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1484: warning: 'ASIHTTPRequest' may not respond to '-proxyHost'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1485: warning: 'ASIHTTPRequest' may not respond to '-proxyPort'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1485: warning: passing argument 1 of 'numberWithInt:' makes integer from pointer without a cast
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1486: warning: 'ASIHTTPRequest' may not respond to '-proxyAuthenticationScheme'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1487: warning: no '+storeProxyAuthenticationCredentialsInSessionStore:' method found
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1489: warning: 'ASIHTTPRequest' may not respond to '-setProxyCredentials:'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1492: warning: no '+removeProxyAuthenticationCredentialsFromSessionStore:' method found
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m: In function '-[ASIHTTPRequest applyCredentials:]':
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1502: error: 'requestAuthentication' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1502: error: 'request' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1507: error: 'useKeychainPersistance' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1510: error: 'useSessionPersistance' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1515: warning: 'ASIHTTPRequest' may not respond to '-url'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1516: warning: 'ASIHTTPRequest' may not respond to '-authenticationScheme'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1520: warning: no '+storeAuthenticationCredentialsInSessionStore:' method found
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1523: warning: 'ASIHTTPRequest' may not respond to '-setRequestCredentials:'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1526: warning: no '+removeAuthenticationCredentialsFromSessionStore:' method found
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m: In function '-[ASIHTTPRequest findProxyCredentials]':
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1537: warning: implicit declaration of function 'CFHTTPAuthenticationRequiresAccountDomain'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1537: error: 'proxyAuthentication' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1538: warning: 'ASIHTTPRequest' may not respond to '-proxyDomain'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1539: warning: 'ASIHTTPRequest' may not respond to '-setProxyDomain:'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1541: warning: 'ASIHTTPRequest' may not respond to '-proxyDomain'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1541: error: 'kCFHTTPAuthenticationAccountDomain' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1549: warning: 'ASIHTTPRequest' may not respond to '-mainRequest'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1549: warning: 'ASIHTTPRequest' may not respond to '-mainRequest'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1549: warning: no '-proxyUsername' method found
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1549: warning: 'ASIHTTPRequest' may not respond to '-mainRequest'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1549: warning: no '-proxyPassword' method found
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1550: warning: 'ASIHTTPRequest' may not respond to '-mainRequest'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1550: warning: no '-proxyUsername' method found
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1551: warning: 'ASIHTTPRequest' may not respond to '-mainRequest'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1551: warning: no '-proxyPassword' method found
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1554: warning: 'ASIHTTPRequest' may not respond to '-proxyUsername'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1554: warning: 'ASIHTTPRequest' may not respond to '-proxyPassword'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1555: warning: 'ASIHTTPRequest' may not respond to '-proxyUsername'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1556: warning: 'ASIHTTPRequest' may not respond to '-proxyPassword'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1563: warning: 'ASIHTTPRequest' may not respond to '-proxyHost'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1563: warning: 'ASIHTTPRequest' may not respond to '-proxyPort'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1563: warning: 'ASIHTTPRequest' may not respond to '-url'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1563: warning: 'ASIHTTPRequest' may not respond to '+savedCredentialsForProxy:port:protocol:realm:'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1574: error: 'kCFHTTPAuthenticationUsername' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1575: error: 'kCFHTTPAuthenticationPassword' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m: In function '-[ASIHTTPRequest findCredentials]':
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1587: error: 'requestAuthentication' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1588: error: 'domain' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1589: warning: 'ASIHTTPRequest' may not respond to '-setDomain:'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1591: error: 'kCFHTTPAuthenticationAccountDomain' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1595: warning: 'ASIHTTPRequest' may not respond to '-url'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1596: warning: 'ASIHTTPRequest' may not respond to '-url'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1602: warning: 'ASIHTTPRequest' may not respond to '-mainRequest'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1602: warning: 'ASIHTTPRequest' may not respond to '-mainRequest'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1602: warning: no '-username' method found
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1602: warning: 'ASIHTTPRequest' may not respond to '-mainRequest'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1603: warning: 'ASIHTTPRequest' may not respond to '-mainRequest'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1603: warning: no '-username' method found
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1604: warning: 'ASIHTTPRequest' may not respond to '-mainRequest'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1607: warning: 'ASIHTTPRequest' may not respond to '-username'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1607: warning: 'ASIHTTPRequest' may not respond to '-password'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1608: warning: 'ASIHTTPRequest' may not respond to '-username'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1609: warning: 'ASIHTTPRequest' may not respond to '-password'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1615: error: 'useKeychainPersistance' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1616: warning: 'ASIHTTPRequest' may not respond to '-url'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1616: warning: 'ASIHTTPRequest' may not respond to '-url'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1616: warning: 'ASIHTTPRequest' may not respond to '-url'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1616: warning: 'ASIHTTPRequest' may not respond to '+savedCredentialsForHost:port:protocol:realm:'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1627: error: 'kCFHTTPAuthenticationUsername' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1628: error: 'kCFHTTPAuthenticationPassword' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m: In function '-[ASIHTTPRequest showProxyAuthenticationDialog]':
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1654: warning: 'ASIHTTPRequest' may not respond to '-shouldPresentProxyAuthenticationDialog'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1658: warning: 'ASIHTTPRequest' may not respond to '-error'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m: In function '-[ASIHTTPRequest askDelegateForProxyCredentials]':
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1679: warning: 'ASIHTTPRequest' may not respond to '-delegate'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1681: warning: 'ASIHTTPRequest' may not respond to '-queue'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1690: warning: 'ASIHTTPRequest' may not respond to '-error'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1690: warning: 'ASIHTTPRequest' may not respond to '-mainRequest'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m: In function '-[ASIHTTPRequest attemptToApplyProxyCredentialsAndResume]':
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1701: warning: 'ASIHTTPRequest' may not respond to '-error'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1701: warning: 'ASIHTTPRequest' may not respond to '-isCancelled'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1706: error: 'proxyAuthentication' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1707: error: 'CFHTTPMessageRef' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1707: error: expected ';' before 'responseHeader'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1708: warning: implicit declaration of function 'CFHTTPAuthenticationCreateFromResponse'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1708: error: 'responseHeader' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1710: warning: implicit declaration of function 'CFHTTPAuthenticationCopyMethod'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1710: warning: 'ASIHTTPRequest' may not respond to '-setProxyAuthenticationScheme:'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1716: error: 'ASIInternalErrorWhileApplyingCredentialsType' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1723: warning: implicit declaration of function 'CFHTTPAuthenticationCopyRealm'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1728: warning: implicit declaration of function 'CFHTTPAuthenticationIsValid'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1734: error: 'kCFStreamErrorDomainHTTP' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1734: error: 'kCFStreamErrorHTTPAuthenticationBadUserName' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1734: error: 'kCFStreamErrorHTTPAuthenticationBadPassword' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1740: error: 'proxyCredentials' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1740: warning: no '+removeProxyAuthenticationCredentialsFromSessionStore:' method found
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1741: warning: 'ASIHTTPRequest' may not respond to '-setProxyCredentials:'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1745: warning: 'ASIHTTPRequest' may not respond to '-error'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1745: warning: 'ASIHTTPRequest' may not respond to '-isCancelled'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1752: warning: 'ASIHTTPRequest' may not respond to '-useSessionPersistance'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1753: warning: 'ASIHTTPRequest' may not respond to '-findSessionProxyAuthenticationCredentials'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1785: warning: 'ASIHTTPRequest' may not respond to '-proxyAuthenticationScheme'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1785: error: 'kCFHTTPAuthenticationSchemeNTLM' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1789: warning: 'ASIHTTPRequest' may not respond to '-proxyAuthenticationScheme'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1798: warning: implicit declaration of function 'CFHTTPAuthenticationRequiresUserNameAndPassword'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1804: warning: 'ASIHTTPRequest' may not respond to '-error'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1804: warning: 'ASIHTTPRequest' may not respond to '-isCancelled'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1810: warning: 'ASIHTTPRequest' may not respond to '-useSessionPersistance'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1811: warning: 'ASIHTTPRequest' may not respond to '-findSessionProxyAuthenticationCredentials'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m: In function '-[ASIHTTPRequest showAuthenticationDialog]':
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1860: warning: 'ASIHTTPRequest' may not respond to '-shouldPresentAuthenticationDialog'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1864: warning: 'ASIHTTPRequest' may not respond to '-error'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m: In function '-[ASIHTTPRequest askDelegateForCredentials]':
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1884: warning: 'ASIHTTPRequest' may not respond to '-delegate'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1886: warning: 'ASIHTTPRequest' may not respond to '-queue'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1895: warning: 'ASIHTTPRequest' may not respond to '-error'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1895: warning: 'ASIHTTPRequest' may not respond to '-mainRequest'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m: In function '-[ASIHTTPRequest attemptToApplyCredentialsAndResume]':
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1905: warning: 'ASIHTTPRequest' may not respond to '-error'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1905: warning: 'ASIHTTPRequest' may not respond to '-isCancelled'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1909: warning: 'ASIHTTPRequest' may not respond to '-needsProxyAuthentication'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1915: error: 'requestAuthentication' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1916: error: 'CFHTTPMessageRef' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1916: error: expected ';' before 'responseHeader'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1917: error: 'responseHeader' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1919: warning: 'ASIHTTPRequest' may not respond to '-setAuthenticationScheme:'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1924: error: 'ASIInternalErrorWhileApplyingCredentialsType' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1942: error: 'kCFStreamErrorDomainHTTP' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1942: error: 'kCFStreamErrorHTTPAuthenticationBadUserName' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1942: error: 'kCFStreamErrorHTTPAuthenticationBadPassword' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1948: error: 'requestCredentials' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1948: warning: no '+removeAuthenticationCredentialsFromSessionStore:' method found
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1949: warning: 'ASIHTTPRequest' may not respond to '-setRequestCredentials:'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1952: warning: 'ASIHTTPRequest' may not respond to '-error'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1952: warning: 'ASIHTTPRequest' may not respond to '-isCancelled'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1958: warning: 'ASIHTTPRequest' may not respond to '-useSessionPersistance'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1959: warning: 'ASIHTTPRequest' may not respond to '-findSessionAuthenticationCredentials'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1992: warning: 'ASIHTTPRequest' may not respond to '-authenticationScheme'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1992: error: 'kCFHTTPAuthenticationSchemeNTLM' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:1996: warning: 'ASIHTTPRequest' may not respond to '-authenticationScheme'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:2010: warning: 'ASIHTTPRequest' may not respond to '-error'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:2010: warning: 'ASIHTTPRequest' may not respond to '-isCancelled'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:2016: warning: 'ASIHTTPRequest' may not respond to '-useSessionPersistance'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:2017: warning: 'ASIHTTPRequest' may not respond to '-findSessionAuthenticationCredentials'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m: In function '-[ASIHTTPRequest addBasicAuthenticationHeaderWithUsername:andPassword:]':
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:2062: warning: 'ASIHTTPRequest' may not respond to '+base64forData:'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m: In function '-[ASIHTTPRequest handleNetworkEvent:]':
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:2073: warning: 'ASIHTTPRequest' may not respond to '-isCancelled'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:2081: warning: 'ASIHTTPRequest' may not respond to '-handleBytesAvailable'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:2085: warning: 'ASIHTTPRequest' may not respond to '-handleStreamComplete'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:2089: warning: 'ASIHTTPRequest' may not respond to '-handleStreamError'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m: In function '-[ASIHTTPRequest handleBytesAvailable]':
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:2113: error: 'contentLength' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:2122: warning: no '+isBandwidthThrottled' method found
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:2143: error: 'readStream' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:2148: warning: 'ASIHTTPRequest' may not respond to '-handleStreamError'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:2157: warning: 'ASIHTTPRequest' may not respond to '+incrementBandwidthUsedInLastSecond:'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:2160: warning: 'ASIHTTPRequest' may not respond to '-downloadDestinationPath'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:2163: warning: 'ASIHTTPRequest' may not respond to '-temporaryFileDownloadPath'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:2164: warning: 'ASIHTTPRequest' may not respond to '-setTemporaryFileDownloadPath:'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:2165: warning: 'ASIHTTPRequest' may not respond to '-allowResumeForFileDownloads'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:2169: warning: 'ASIHTTPRequest' may not respond to '-temporaryFileDownloadPath'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:2176: error: 'rawResponseData' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m: In function '-[ASIHTTPRequest handleStreamComplete]':
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:2198: error: 'readStream' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:2211: warning: 'ASIHTTPRequest' may not respond to '-didCreateTemporaryPostDataFile'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:2216: warning: 'ASIHTTPRequest' may not respond to '-temporaryFileDownloadPath'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:2221: warning: 'ASIHTTPRequest' may not respond to '-temporaryFileDownloadPath'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:2221: warning: 'ASIHTTPRequest' may not respond to '-downloadDestinationPath'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:2221: warning: 'ASIHTTPRequest' may not respond to '+uncompressZippedDataFromFile:toFile:'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:2221: warning: initialization makes integer from pointer without a cast
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:2223: error: 'ASIFileManagementError' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:2223: warning: 'ASIHTTPRequest' may not respond to '-temporaryFileDownloadPath'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:2231: warning: 'ASIHTTPRequest' may not respond to '-downloadDestinationPath'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:2232: warning: 'ASIHTTPRequest' may not respond to '-downloadDestinationPath'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:2234: warning: 'ASIHTTPRequest' may not respond to '-downloadDestinationPath'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:2240: warning: 'ASIHTTPRequest' may not respond to '-temporaryFileDownloadPath'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:2240: warning: 'ASIHTTPRequest' may not respond to '-downloadDestinationPath'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:2242: warning: 'ASIHTTPRequest' may not respond to '-temporaryFileDownloadPath'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:2242: warning: 'ASIHTTPRequest' may not respond to '-downloadDestinationPath'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:2244: warning: 'ASIHTTPRequest' may not respond to '-setTemporaryFileDownloadPath:'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m: In function '-[ASIHTTPRequest handleStreamError]':
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:2260: error: 'readStream' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:2265: warning: 'ASIHTTPRequest' may not respond to '-error'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:2279: error: 'ASIConnectionFailureErrorType' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m: In function '+[ASIHTTPRequest storeProxyAuthenticationCredentialsInSessionStore:]':
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:2316: warning: 'ASIHTTPRequest' may not respond to '+removeProxyAuthenticationCredentialsFromSessionStore:'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m: In function '+[ASIHTTPRequest storeAuthenticationCredentialsInSessionStore:]':
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:2324: warning: 'ASIHTTPRequest' may not respond to '+removeAuthenticationCredentialsFromSessionStore:'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m: In function '-[ASIHTTPRequest findSessionProxyAuthenticationCredentials]':
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:2366: warning: 'ASIHTTPRequest' may not respond to '-proxyHost'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:2366: warning: 'ASIHTTPRequest' may not respond to '-proxyPort'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:2366: warning: comparison between pointer and integer
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m: In function '-[ASIHTTPRequest findSessionAuthenticationCredentials]':
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:2382: warning: 'ASIHTTPRequest' may not respond to '-url'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:2391: warning: 'ASIHTTPRequest' may not respond to '-url'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m: In function '+[ASIHTTPRequest sessionCookies]':
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:2455: warning: 'ASIHTTPRequest' may not respond to '+setSessionCookies:'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m: In function '+[ASIHTTPRequest uncompressZippedDataFromFile:toFile:]':
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:2569: warning: 'ASIHTTPRequest' may not respond to '+uncompressZippedDataFromSource:toDestination:'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:2569: warning: initialization makes integer from pointer without a cast
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m: In function '+[ASIHTTPRequest compressDataFromFile:toFile:]':
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:2704: warning: 'ASIHTTPRequest' may not respond to '+compressDataFromSource:toDestination:'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:2704: warning: initialization makes integer from pointer without a cast
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m: In function '+[ASIHTTPRequest proxiesForURL:fromPAC:]':
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:2838: warning: passing argument 1 of 'CFRelease' makes pointer from integer without a cast
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:2851: warning: implicit declaration of function 'CFNetworkCopyProxiesForAutoConfigurationScript'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m: In function '+[ASIHTTPRequest setShouldThrottleBandwidthForWWAN:]':
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:2998: warning: 'ASIHTTPRequest' may not respond to '+throttleBandwidthForWWANUsingLimit:'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m: In function '+[ASIHTTPRequest throttleBandwidthForWWANUsingLimit:]':
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:3013: warning: 'Reachability' may not respond to '+sharedReachability'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:3013: warning: no '-setNetworkStatusNotificationsEnabled:' method found
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:3016: warning: 'ASIHTTPRequest' may not respond to '+reachabilityChanged:'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m: In function '+[ASIHTTPRequest reachabilityChanged:]':
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:3022: warning: 'Reachability' may not respond to '+sharedReachability'
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:3022: warning: no '-internetConnectionStatus' method found
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:3022: error: 'ReachableViaCarrierDataNetwork' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m: At top level:
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:3095: error: no declaration of property 'username' found in the interface
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:3096: error: no declaration of property 'password' found in the interface
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:3097: error: no declaration of property 'domain' found in the interface
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:3098: error: no declaration of property 'proxyUsername' found in the interface
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:3099: error: no declaration of property 'proxyPassword' found in the interface
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:3100: error: no declaration of property 'proxyDomain' found in the interface
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:3101: error: no declaration of property 'url' found in the interface
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:3102: error: no declaration of property 'delegate' found in the interface
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:3103: error: no declaration of property 'queue' found in the interface
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:3104: error: no declaration of property 'uploadProgressDelegate' found in the interface
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:3105: error: no declaration of property 'downloadProgressDelegate' found in the interface
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:3106: error: no declaration of property 'useKeychainPersistance' found in the interface
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:3107: error: no declaration of property 'useSessionPersistance' found in the interface
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:3108: error: no declaration of property 'useCookiePersistance' found in the interface
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:3109: error: no declaration of property 'downloadDestinationPath' found in the interface
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:3110: error: no declaration of property 'temporaryFileDownloadPath' found in the interface
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:3111: error: no declaration of property 'didFinishSelector' found in the interface
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:3112: error: no declaration of property 'didFailSelector' found in the interface
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:3115: error: no declaration of property 'error' found in the interface
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:3117: error: no declaration of property 'requestHeaders' found in the interface
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:3120: error: no declaration of property 'requestCookies' found in the interface
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:3121: error: no declaration of property 'requestCredentials' found in the interface
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:3125: error: no declaration of property 'timeOutSeconds' found in the interface
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:3126: error: no declaration of property 'requestMethod' found in the interface
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:3127: error: no declaration of property 'postBody' found in the interface
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:3131: error: no declaration of property 'postLength' found in the interface
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:3132: error: no declaration of property 'shouldResetProgressIndicators' found in the interface
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:3133: error: no declaration of property 'mainRequest' found in the interface
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:3136: error: no declaration of property 'showAccurateProgress' found in the interface
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:3138: error: no declaration of property 'defaultResponseEncoding' found in the interface
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:3140: error: no declaration of property 'allowCompressedResponse' found in the interface
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:3141: error: no declaration of property 'allowResumeForFileDownloads' found in the interface
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:3142: error: no declaration of property 'userInfo' found in the interface
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:3143: error: no declaration of property 'postBodyFilePath' found in the interface
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:3147: error: no declaration of property 'shouldStreamPostDataFromDisk' found in the interface
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:3148: error: no declaration of property 'didCreateTemporaryPostDataFile' found in the interface
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:3149: error: no declaration of property 'useHTTPVersionOne' found in the interface
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:3153: error: no declaration of property 'haveBuiltPostBody' found in the interface
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:3158: error: no declaration of property 'shouldRedirect' found in the interface
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:3159: error: no declaration of property 'validatesSecureCertificate' found in the interface
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:3162: error: no declaration of property 'shouldCompressRequestBody' found in the interface
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:3164: error: no declaration of property 'needsProxyAuthentication' found in the interface
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:3165: error: no declaration of property 'proxyCredentials' found in the interface
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:3166: error: no declaration of property 'proxyHost' found in the interface
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:3167: error: no declaration of property 'proxyPort' found in the interface
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:3168: error: no declaration of property 'PACurl' found in the interface
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:3169: error: no declaration of property 'authenticationScheme' found in the interface
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:3170: error: no declaration of property 'proxyAuthenticationScheme' found in the interface
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:3171: error: no declaration of property 'shouldPresentAuthenticationDialog' found in the interface
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:3172: error: no declaration of property 'shouldPresentProxyAuthenticationDialog' found in the interface
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:3173: error: no declaration of property 'authenticationChallengeInProgress' found in the interface
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:3175: error: no declaration of property 'shouldPresentCredentialsBeforeChallenge' found in the interface
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:3176: error: no declaration of property 'haveBuiltRequestHeaders' found in the interface
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:3174: error: synthesized property 'responseStatusMessage' must either be named the same as a compatible ivar or must explicitly name an ivar
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:3163: error: synthesized property 'authenticationLock' must either be named the same as a compatible ivar or must explicitly name an ivar
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:3161: error: synthesized property 'redirectCount' must either be named the same as a compatible ivar or must explicitly name an ivar
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:3160: error: synthesized property 'needsRedirect' must either be named the same as a compatible ivar or must explicitly name an ivar
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:3157: error: synthesized property 'updatedProgress' must either be named the same as a compatible ivar or must explicitly name an ivar
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:3156: error: synthesized property 'proxyAuthenticationRetryCount' must either be named the same as a compatible ivar or must explicitly name an ivar
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:3155: error: synthesized property 'authenticationRetryCount' must either be named the same as a compatible ivar or must explicitly name an ivar
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:3154: error: synthesized property 'fileDownloadOutputStream' must either be named the same as a compatible ivar or must explicitly name an ivar
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:3152: error: synthesized property 'cancelledLock' must either be named the same as a compatible ivar or must explicitly name an ivar
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:3151: error: synthesized property 'lastBytesSent' must either be named the same as a compatible ivar or must explicitly name an ivar
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:3150: error: synthesized property 'lastBytesRead' must either be named the same as a compatible ivar or must explicitly name an ivar
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:3146: error: synthesized property 'postBodyReadStream' must either be named the same as a compatible ivar or must explicitly name an ivar
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:3145: error: synthesized property 'postBodyWriteStream' must either be named the same as a compatible ivar or must explicitly name an ivar
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:3144: error: synthesized property 'compressedPostBodyFilePath' must either be named the same as a compatible ivar or must explicitly name an ivar
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:3139: error: synthesized property 'responseEncoding' must either be named the same as a compatible ivar or must explicitly name an ivar
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:3137: error: synthesized property 'uploadBufferSize' must either be named the same as a compatible ivar or must explicitly name an ivar
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:3135: error: synthesized property 'totalBytesSent' must either be named the same as a compatible ivar or must explicitly name an ivar
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:3134: error: synthesized property 'totalBytesRead' must either be named the same as a compatible ivar or must explicitly name an ivar
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:3130: error: synthesized property 'partialDownloadSize' must either be named the same as a compatible ivar or must explicitly name an ivar
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:3129: error: synthesized property 'contentLength' must either be named the same as a compatible ivar or must explicitly name an ivar
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:3128: error: synthesized property 'compressedPostBody' must either be named the same as a compatible ivar or must explicitly name an ivar
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:3124: error: synthesized property 'lastActivityTime' must either be named the same as a compatible ivar or must explicitly name an ivar
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:3123: error: synthesized property 'rawResponseData' must either be named the same as a compatible ivar or must explicitly name an ivar
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:3122: error: synthesized property 'responseStatusCode' must either be named the same as a compatible ivar or must explicitly name an ivar
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:3119: error: synthesized property 'responseCookies' must either be named the same as a compatible ivar or must explicitly name an ivar
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:3118: error: synthesized property 'responseHeaders' must either be named the same as a compatible ivar or must explicitly name an ivar
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:3116: error: synthesized property 'complete' must either be named the same as a compatible ivar or must explicitly name an ivar
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:3114: error: synthesized property 'proxyAuthenticationRealm' must either be named the same as a compatible ivar or must explicitly name an ivar
+/Users/chrmai1/Desktop/Linux/ASIHTTPRequest.m:3113: error: synthesized property 'authenticationRealm' must either be named the same as a compatible ivar or must explicitly name an ivar
+{standard input}:92:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_0" minus "L00000000001$pb"
+{standard input}:92:symbol: "L_OBJC_SELECTOR_REFERENCES_0" can't be undefined in a subtraction expression
+{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_0

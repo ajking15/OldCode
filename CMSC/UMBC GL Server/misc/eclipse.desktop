@@ -1,0 +1,11 @@
+
+[Desktop Entry]
+Encoding=UTF-8
+Version=1.0
+Type=Application
+Terminal=false
+Name[en_US]=eclipse
+Exec=/usr/local/bin/eclipse
+Icon[en_US]=/usr/share/pixmaps/redhat-starthere.png
+Name=eclipse
+Icon=/usr/share/pixmaps/redhat-starthere.png

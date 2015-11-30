@@ -1,0 +1,172 @@
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m: In function '-[ASINetworkQueue init]':
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:22: warning: 'ASINetworkQueue' may not respond to '-setShouldCancelAllRequestsOnFailure:'
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:22: warning: (Messages without a matching method signature
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:22: warning: will be assumed to return 'id' and accept
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:22: warning: '...' as arguments.)
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:23: warning: 'ASINetworkQueue' may not respond to '-setMaxConcurrentOperationCount:'
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:24: warning: 'ASINetworkQueue' may not respond to '-setSuspended:'
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m: In function '-[ASINetworkQueue dealloc]':
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:37: warning: 'ASINetworkQueue' may not respond to '-operations'
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:40: error: 'userInfo' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:40: error: (Each undeclared identifier is reported only once
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:40: error: for each function it appears in.)
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m: In function '-[ASINetworkQueue isNetworkActive]':
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:46: warning: 'ASINetworkQueue' may not respond to '-isSuspended'
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m: In function '-[ASINetworkQueue setSuspended:]':
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:58: warning: 'NSObject' may not respond to '-setSuspended:'
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m: In function '-[ASINetworkQueue go]':
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:65: warning: 'ASINetworkQueue' may not respond to '-showAccurateProgress'
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:66: warning: 'ASINetworkQueue' may not respond to '-downloadProgressDelegate'
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:67: warning: 'ASINetworkQueue' may not respond to '-incrementDownloadSizeBy:'
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:69: warning: 'ASINetworkQueue' may not respond to '-uploadProgressDelegate'
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:70: warning: 'ASINetworkQueue' may not respond to '-incrementUploadSizeBy:'
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m: In function '-[ASINetworkQueue cancelAllOperations]':
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:79: warning: 'ASINetworkQueue' may not respond to '-setBytesUploadedSoFar:'
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:80: warning: 'ASINetworkQueue' may not respond to '-setTotalBytesToUpload:'
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:81: warning: 'ASINetworkQueue' may not respond to '-setBytesDownloadedSoFar:'
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:82: warning: 'ASINetworkQueue' may not respond to '-setTotalBytesToDownload:'
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:83: warning: 'NSObject' may not respond to '-cancelAllOperations'
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m: In function '-[ASINetworkQueue setUploadProgressDelegate:]':
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:89: error: 'uploadProgressDelegate' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m: In function '-[ASINetworkQueue setDownloadProgressDelegate:]':
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:108: error: 'downloadProgressDelegate' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m: In function '-[ASINetworkQueue addHEADOperation:]':
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:135: warning: 'NSObject' may not respond to '-addOperation:'
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m: In function '-[ASINetworkQueue addOperation:]':
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:150: warning: 'ASINetworkQueue' may not respond to '-showAccurateProgress'
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:156: warning: 'ASINetworkQueue' may not respond to '-isSuspended'
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:166: error: 'uploadProgressDelegate' undeclared (first use in this function)
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:168: warning: 'ASINetworkQueue' may not respond to '-totalBytesToUpload'
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:168: warning: 'ASINetworkQueue' may not respond to '-setTotalBytesToUpload:'
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:171: warning: 'ASINetworkQueue' may not respond to '-showAccurateProgress'
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:171: warning: passing argument 1 of 'setShowAccurateProgress:' makes integer from pointer without a cast
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:175: warning: 'NSObject' may not respond to '-addOperation:'
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m: In function '-[ASINetworkQueue requestDidStart:]':
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:182: warning: 'ASINetworkQueue' may not respond to '-requestDidStartSelector'
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:183: warning: 'ASINetworkQueue' may not respond to '-delegate'
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:183: warning: 'ASINetworkQueue' may not respond to '-requestDidStartSelector'
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:183: warning: passing argument 1 of 'performSelector:withObject:' from incompatible pointer type
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m: In function '-[ASINetworkQueue requestDidFail:]':
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:191: warning: 'ASINetworkQueue' may not respond to '-requestDidFailSelector'
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:192: warning: 'ASINetworkQueue' may not respond to '-delegate'
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:192: warning: 'ASINetworkQueue' may not respond to '-requestDidFailSelector'
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:192: warning: passing argument 1 of 'performSelector:withObject:' from incompatible pointer type
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:194: warning: 'ASINetworkQueue' may not respond to '-shouldCancelAllRequestsOnFailure'
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:198: warning: 'ASINetworkQueue' may not respond to '-queueDidFinishSelector'
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:199: warning: 'ASINetworkQueue' may not respond to '-delegate'
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:199: warning: 'ASINetworkQueue' may not respond to '-queueDidFinishSelector'
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:199: warning: passing argument 1 of 'performSelector:withObject:' from incompatible pointer type
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m: In function '-[ASINetworkQueue requestDidFinish:]':
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:208: warning: 'ASINetworkQueue' may not respond to '-requestDidFinishSelector'
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:209: warning: 'ASINetworkQueue' may not respond to '-delegate'
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:209: warning: 'ASINetworkQueue' may not respond to '-requestDidFinishSelector'
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:209: warning: passing argument 1 of 'performSelector:withObject:' from incompatible pointer type
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:212: warning: 'ASINetworkQueue' may not respond to '-queueDidFinishSelector'
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:213: warning: 'ASINetworkQueue' may not respond to '-delegate'
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:213: warning: 'ASINetworkQueue' may not respond to '-queueDidFinishSelector'
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:213: warning: passing argument 1 of 'performSelector:withObject:' from incompatible pointer type
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m: In function '-[ASINetworkQueue setUploadBufferSize:]':
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:221: warning: 'ASINetworkQueue' may not respond to '-uploadProgressDelegate'
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:224: warning: 'ASINetworkQueue' may not respond to '-totalBytesToUpload'
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:224: warning: 'ASINetworkQueue' may not respond to '-setTotalBytesToUpload:'
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:225: warning: 'ASINetworkQueue' may not respond to '-incrementUploadProgressBy:'
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m: In function '-[ASINetworkQueue incrementUploadSizeBy:]':
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:230: warning: 'ASINetworkQueue' may not respond to '-uploadProgressDelegate'
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:233: warning: 'ASINetworkQueue' may not respond to '-totalBytesToUpload'
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:233: warning: 'ASINetworkQueue' may not respond to '-setTotalBytesToUpload:'
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:234: warning: 'ASINetworkQueue' may not respond to '-incrementUploadProgressBy:'
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m: In function '-[ASINetworkQueue decrementUploadProgressBy:]':
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:239: warning: 'ASINetworkQueue' may not respond to '-uploadProgressDelegate'
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:239: warning: 'ASINetworkQueue' may not respond to '-totalBytesToUpload'
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:242: warning: 'ASINetworkQueue' may not respond to '-bytesUploadedSoFar'
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:242: warning: 'ASINetworkQueue' may not respond to '-setBytesUploadedSoFar:'
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:247: warning: 'ASINetworkQueue' may not respond to '-bytesUploadedSoFar'
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:247: warning: passing argument 1 of 'numberWithUnsignedLongLong:' makes integer from pointer without a cast
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:247: warning: 'ASINetworkQueue' may not respond to '-totalBytesToUpload'
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:247: warning: passing argument 1 of 'numberWithUnsignedLongLong:' makes integer from pointer without a cast
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:249: warning: 'ASINetworkQueue' may not respond to '-bytesUploadedSoFar'
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:249: error: invalid operands to binary * (have 'id' and 'double')
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:249: warning: 'ASINetworkQueue' may not respond to '-totalBytesToUpload'
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:249: error: invalid operands to binary * (have 'id' and 'double')
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:251: warning: 'ASINetworkQueue' may not respond to '-uploadProgressDelegate'
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m: In function '-[ASINetworkQueue incrementUploadProgressBy:]':
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:257: warning: 'ASINetworkQueue' may not respond to '-uploadProgressDelegate'
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:257: warning: 'ASINetworkQueue' may not respond to '-totalBytesToUpload'
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:260: warning: 'ASINetworkQueue' may not respond to '-bytesUploadedSoFar'
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:260: warning: 'ASINetworkQueue' may not respond to '-setBytesUploadedSoFar:'
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:265: warning: 'ASINetworkQueue' may not respond to '-bytesUploadedSoFar'
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:265: warning: passing argument 1 of 'numberWithUnsignedLongLong:' makes integer from pointer without a cast
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:265: warning: 'ASINetworkQueue' may not respond to '-totalBytesToUpload'
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:265: warning: passing argument 1 of 'numberWithUnsignedLongLong:' makes integer from pointer without a cast
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:267: warning: 'ASINetworkQueue' may not respond to '-bytesUploadedSoFar'
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:267: error: invalid operands to binary * (have 'id' and 'double')
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:267: warning: 'ASINetworkQueue' may not respond to '-totalBytesToUpload'
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:267: error: invalid operands to binary * (have 'id' and 'double')
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:269: warning: 'ASINetworkQueue' may not respond to '-uploadProgressDelegate'
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m: In function '-[ASINetworkQueue incrementDownloadSizeBy:]':
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:275: warning: 'ASINetworkQueue' may not respond to '-downloadProgressDelegate'
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:278: warning: 'ASINetworkQueue' may not respond to '-totalBytesToDownload'
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:278: warning: 'ASINetworkQueue' may not respond to '-setTotalBytesToDownload:'
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:279: warning: 'ASINetworkQueue' may not respond to '-incrementDownloadProgressBy:'
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m: In function '-[ASINetworkQueue incrementDownloadProgressBy:]':
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:284: warning: 'ASINetworkQueue' may not respond to '-downloadProgressDelegate'
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:284: warning: 'ASINetworkQueue' may not respond to '-totalBytesToDownload'
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:287: warning: 'ASINetworkQueue' may not respond to '-bytesDownloadedSoFar'
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:287: warning: 'ASINetworkQueue' may not respond to '-setBytesDownloadedSoFar:'
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:292: warning: 'ASINetworkQueue' may not respond to '-bytesDownloadedSoFar'
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:292: warning: passing argument 1 of 'numberWithUnsignedLongLong:' makes integer from pointer without a cast
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:292: warning: 'ASINetworkQueue' may not respond to '-totalBytesToDownload'
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:292: warning: passing argument 1 of 'numberWithUnsignedLongLong:' makes integer from pointer without a cast
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:294: warning: 'ASINetworkQueue' may not respond to '-bytesDownloadedSoFar'
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:294: error: invalid operands to binary * (have 'id' and 'double')
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:294: warning: 'ASINetworkQueue' may not respond to '-totalBytesToDownload'
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:294: error: invalid operands to binary * (have 'id' and 'double')
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:296: warning: 'ASINetworkQueue' may not respond to '-downloadProgressDelegate'
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m: In function '-[ASINetworkQueue authenticationNeededForRequest:]':
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:303: warning: 'ASINetworkQueue' may not respond to '-delegate'
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:304: warning: 'ASINetworkQueue' may not respond to '-delegate'
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m: In function '-[ASINetworkQueue proxyAuthenticationNeededForRequest:]':
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:310: warning: 'ASINetworkQueue' may not respond to '-delegate'
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:311: warning: 'ASINetworkQueue' may not respond to '-delegate'
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m: In function '-[ASINetworkQueue respondsToSelector:]':
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:319: warning: 'ASINetworkQueue' may not respond to '-delegate'
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:324: warning: 'ASINetworkQueue' may not respond to '-delegate'
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m: At top level:
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:334: error: no declaration of property 'bytesUploadedSoFar' found in the interface
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:335: error: no declaration of property 'totalBytesToUpload' found in the interface
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:336: error: no declaration of property 'bytesDownloadedSoFar' found in the interface
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:337: error: no declaration of property 'totalBytesToDownload' found in the interface
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:338: error: no declaration of property 'shouldCancelAllRequestsOnFailure' found in the interface
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:339: error: no declaration of property 'uploadProgressDelegate' found in the interface
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:340: error: no declaration of property 'downloadProgressDelegate' found in the interface
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:341: error: no declaration of property 'requestDidStartSelector' found in the interface
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:342: error: no declaration of property 'requestDidFinishSelector' found in the interface
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:343: error: no declaration of property 'requestDidFailSelector' found in the interface
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:344: error: no declaration of property 'queueDidFinishSelector' found in the interface
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:345: error: no declaration of property 'delegate' found in the interface
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:346: error: no declaration of property 'showAccurateProgress' found in the interface
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:347: error: no declaration of property 'userInfo' found in the interface
+/Users/chrmai1/Desktop/Linux/ASINetworkQueue.m:333: error: synthesized property 'requestsCount' must either be named the same as a compatible ivar or must explicitly name an ivar
+{standard input}:120:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_5" minus "L00000000002$pb"
+{standard input}:120:symbol: "L_OBJC_SELECTOR_REFERENCES_5" can't be undefined in a subtraction expression
+{standard input}:114:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_0" minus "L00000000002$pb"
+{standard input}:114:symbol: "L_OBJC_SELECTOR_REFERENCES_0" can't be undefined in a subtraction expression
+{standard input}:108:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_4" minus "L00000000002$pb"
+{standard input}:108:symbol: "L_OBJC_SELECTOR_REFERENCES_4" can't be undefined in a subtraction expression
+{standard input}:77:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_3" minus "L00000000001$pb"
+{standard input}:77:symbol: "L_OBJC_SELECTOR_REFERENCES_3" can't be undefined in a subtraction expression
+{standard input}:69:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_2" minus "L00000000001$pb"
+{standard input}:69:symbol: "L_OBJC_SELECTOR_REFERENCES_2" can't be undefined in a subtraction expression
+{standard input}:61:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_1" minus "L00000000001$pb"
+{standard input}:61:symbol: "L_OBJC_SELECTOR_REFERENCES_1" can't be undefined in a subtraction expression
+{standard input}:53:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_0" minus "L00000000001$pb"
+{standard input}:53:symbol: "L_OBJC_SELECTOR_REFERENCES_0" can't be undefined in a subtraction expression
+{standard input}:49:non-relocatable subtraction expression, "L_OBJC_CLASS_ASINetworkQueue" minus "L00000000001$pb"
+{standard input}:49:symbol: "L_OBJC_CLASS_ASINetworkQueue" can't be undefined in a subtraction expression
+{standard input}:unknown:Undefined local symbol L_OBJC_CLASS_ASINetworkQueue
+{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_0
+{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_1
+{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_2
+{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_3
+{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_4
+{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_5

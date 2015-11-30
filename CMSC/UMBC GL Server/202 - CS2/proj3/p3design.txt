@@ -1,0 +1,24 @@
+CMSC 202 Spring
+Project 3 Design Questions
+
+Copy this file to your directory and edit it to answer the questions below.
+These questions are worth 10% of the project grade.
+Be sure to submit your answers before the project design due date listed in the project description.
+
+1. Where will you store the cost of the gumballs and candy bars?  Explain why you 
+made this decision.
+
+Cash Register. Because one of the functions of the cash register is to do everything a normal cash register would do, ie, calculate change
+I believed it would make sense for the register to store the prices of the candy to streamline the process.
+
+
+2. This project does not use inheritance.  Should it?  If so, which classes should be in
+the inheritance hierarchy?  If not, why not?
+
+No, from what I see none of the classes are a specialized form of another class. Also, each class(aside from the gumball/candybar clones)
+are distinct with separate roles.
+
+
+
+
+

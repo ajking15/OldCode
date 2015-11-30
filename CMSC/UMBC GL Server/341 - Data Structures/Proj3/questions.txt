@@ -1,0 +1,20 @@
+    * Given the N most frequent sequences in one trie, you have to find the counts of those sequences in another 
+      trie. What is the complexity of that operation (in big-O terms) for your implementation as a function of D 
+      (the length of the sequences), N, and S, the number of distinct objects of the type stored in the trie 
+      (e.g., letters in the alphabet), and any other relevant features of the problem? Support your answer.
+	For my function:
+		N = number of times my searchSequence function is called.
+		S = number of nodes in my list of unique bottom children sequences
+	O(m*n). each time the function is called, N, you iteratre over the list of children nodes S which at 
+          worst case is the last node accesed. Also, for comparison it is a simple sequence.equals(otherSequence)
+          method which is done in constant time, where sequence is a list holding the characters.
+
+    * For project 2 this year, every submission probably contained the 4-character sequence "Maze" many times. 
+      But that does not mean the students cheated. What you really want to find are strings shared by a pair of 
+      submissions that are rare in all of the other submissions. Explain how could you use tries to process a set
+      of text files (rather than just a pair) and a find such strings? There is no one right answer here. 
+
+	Set up a trie for each file. Withdraw the maximum number of comparisons possible at various sizes. 
+         Print out a table with these values and locate seqeuences that are prevalent in only two or three files
+         as opposed to the entire class. If these two files end up having numerous compatible sequences 
+         that upon inspection cannot be due to random chance there is a high probability of cheating. 

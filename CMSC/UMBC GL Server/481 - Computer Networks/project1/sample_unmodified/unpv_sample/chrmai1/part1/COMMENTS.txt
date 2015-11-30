@@ -1,0 +1,11 @@
+# Christopher Mai
+# CMSC 481
+# Computer Networks
+# COMMENTS.txt
+
+   Last semester I coded a project in cmsc 491 that made use of socket
+    programming, as such, I had already spent a fair bit of time looking over
+    beej's guide. Due to my familiarty with socket programming I didn't have 
+    a lot of trouble with this project. Overall, I found it to be a fairly
+    enjoyable project to work on. The sample code given to us was very helpful
+    in terms of getting started.

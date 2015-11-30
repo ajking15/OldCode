@@ -1,0 +1,169 @@
+/******************************************************************************
+ ** File:          design5.txt
+ ** Author:        Christopher Mai
+ ** Date:          12/2/07
+ ** Section:       0203
+ ** E-mail:        chrmai1@umbc.edu
+ ** 
+ **  This file is the design text for project 5. As such this file contains all
+ ** #defines, function prototypes, and of course a description for the design.
+ *****************************************************************************/
+
+/******************************************************************************
+ ** Project Design --
+ **  This project will use structures, linked lists,cmd line args, and  
+ ** multiple command line arguments. I will first check all command line 
+ ** arguments. Then I will open the file whose name is provided by the user
+ ** and absorb them into a linked list referred to as the boneyard. Then 
+ ** using a value provided by the command line give an appropriate number
+ ** of dominoes to both the user and system.
+ **  Then the greeting and instructions will be printed to the user. Then the 
+ ** menu will be printed. Game play will commence with the user moving first.
+ ** game play is controlled by a switch statement which will call upon the 
+ ** necessary functions to successfully complete the game. Also the switch 
+ ** statement will reside inside of a loop until one player runs out of 
+ ** dominoes or the quit option is designated by the user. 
+ **  Rules will also be enforced by way of a multitude of functions for each
+ ** switch option.
+ *****************************************************************************/
+
+/*****************************************************************************
+ ** PrintGreeting --
+ **  Prints out a message to greet the user
+ **   Input:  void
+ **   Output: void
+ *****************************************************************************/
+
+void PrintGreeting();
+
+/******************************************************************************
+ ** PrintInstructions --
+ **  Prints out the instructions on how to use this program
+ **   Input:  void
+ **   Output: void
+ *****************************************************************************/
+
+void PrintInstructions();
+
+/*****************************************************************************
+ ** ScanDomino --
+ **  Scans domino from opened file and stores them in a linked list
+ **   Input:  ifp pointer and structure
+ **   Output: void
+ ****************************************************************************/
+
+void ScanDomino(FILE* ifp, NODEPTR* head);
+
+/*****************************************************************************
+ ** DealDomino --
+ **  Creates linked lists for user and for system to use in play
+ **   Input:  head of boneyard, user, and system list, and num dominoes
+ **   Output: void
+ *****************************************************************************/
+
+void DealDomino(NODEPTR* bone, NODEPTR* user, NODEPTR* system, int numDom);
+
+/*****************************************************************************
+ ** PrintMenu --
+ **  Prints out the menu for user interface
+ **   Input:  void
+ **   Output: void
+ ****************************************************************************/
+
+void PrintMenu();
+
+/******************************************************************************
+ ** CreateNode --
+ **  Creates a Node and initializes the members and exits if there is 
+ **  insufficient memory
+ **   Input:  void
+ **   Output: NODEPTR
+ *****************************************************************************/
+
+NODEPTR CreateNode(void);
+
+/*****************************************************************************
+ ** SetData --
+ **  sets the data into the linked list node
+ **   Input:  a pointer to the node and the data
+ **   Output: void
+ *****************************************************************************/
+
+void SetData(NODEPTR temp, int data);
+
+/*****************************************************************************
+ ** InsertLeft --
+ **  inserts a new node into the list 
+ **   Input:  pointer to the head of the linked list and a pointer to the 
+ **           node to be inserted
+ **   Output: void
+ *****************************************************************************/
+
+void InsertLeft(NODEPTR* headptr, NODEPTR temp);
+
+/*****************************************************************************
+ ** InsertRight --
+ **  inserts a new node on the end of the list
+ **   Input:  pointer to tail of list and pointer to node to be inserted
+ **   Output: void
+ ****************************************************************************/
+
+void InsertRight(NODEPTR* tailptr, NODEPTR temp);
+ 
+/****************************************************************************
+ ** CheckDraw --
+ **  Checks to see if player can play a domino before allowing to draw
+ **  from a boneyard
+ **   Input:  pointer to the head of a list
+ **   Output: true or false
+ ****************************************************************************/
+
+int CheckDraw(NODEPTR head);
+
+/****************************************************************************
+ ** DrawDomino --
+ **  Draws a domino from the boneyard
+ **   Input:  pointer to head of list
+ **   Output: void
+ ***************************************************************************/
+
+void DrawDomino(NODEPTR head);
+
+/******************************************************************************
+ ** IsEmpty --
+ **  Checks to see if the list is empty
+ **   Input:  a pointer to the head of the linked list
+ **   Output: 1 or 0 depending on list status
+ *****************************************************************************/
+
+int IsEmpty(NODEPTR head);
+
+/*****************************************************************************
+ ** PrintList -- 
+ **  prints out the linked list to display to the user
+ **   Input:  a pointer to the head of the list 
+ **   Output: void
+ *****************************************************************************/
+
+void PrintList(NODEPTR head);
+
+/*****************************************************************************
+ ** DestroyList --
+ **  Destroy the linked list at end of use
+ **   Input:  head ptr
+ **   Output: void
+ *****************************************************************************/
+
+void DestroyList(NODEPTR* head);
+
+/*****************************************************************************
+ ** Quit --
+ **  quits the game
+ **   Input:  void
+ **   Output: void
+ *****************************************************************************/
+
+void Quit();
+
+#define TRUE  1
+#define FALSE 0

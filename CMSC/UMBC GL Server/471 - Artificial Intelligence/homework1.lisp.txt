@@ -1,0 +1,63 @@
+;; homework1 - Christopher Mai
+;; takes in x, if it's a number, subtracts 2. otherwise rebuffs
+(defun lesstwo (x)
+    (if (numberp x)
+        (- x 2)
+        (list '(Not a Number))))
+
+;; checks if it's a number. if so recursive calls to fact
+(defun fact (x)
+   (cond ((listp x) "Not an Int")
+         ((null x) "Not an Int")
+         ((symbolp x) "Not an Int")
+         (t (if (= x 1)
+                (* x 1)
+                (* x (fact (- x 1)))))))
+
+;; checks for list. if so checks length. if it checks out takes the third
+(defun my-third (l)
+   (if (listp l)
+       (if (> (length l) 2)
+         (car (cddr l))
+         (list '(too short)))
+       (list '(Not a List))))
+
+
+;; takes in a list flattens it. filters out all but ints and make them positive
+;; uses mapcar
+(defun posint1 (l)
+    (mapcar #'abs (cond ((null l) nil)
+                        ((integerp l) (list l))
+			((numberp l) nil)
+			((atom l) nil)
+			(t (append (posint1 (car l))
+				   (posint1 (cdr l)))))))
+
+;; takes list. flattens and filters to ints. makes positive
+;; uses a loop
+(defun posint2 (l)
+  (cond ((null l) nil)
+	((integerp l) (list (abs l)))
+	((numberp l) nil)
+        ((atom l) nil)
+	(t (append (posint2 (car l))
+		   (posint2 (cdr l))))
+	(loop for x in l do (abs x))))
+
+
+;; takes a list flattens. filters to ints and makes positive. 
+;; uses recursion only
+(defun posint3 (l)
+  (cond ((null l) nil)
+	((integerp l) (list (abs l)))
+        ((numberp l) nil)
+        ((atom l) nil)
+        (t (append (posint3 (car l))
+		   (posint3 (cdr l))))))
+
+;; flatten's a list
+(defun flatten-list (l)
+  (cond ((null l) nil)
+	((atom l) (list l))
+	(t (append (flatten-list (car l))
+		   (flatten-list (cdr l))))))

@@ -1,0 +1,20 @@
+1.  Is either of the methods for storing maze cells (stack or queue) guaranteed to find the 
+	shortest path to the goal? If so, which one and why? If not, why not? Note that 
+	this is not asking if one is more efficient than the other, but whether one finds the
+	shortest path regardless of the cost of finding the path.
+	
+	-No, the queue is most efficient at searching areas closest to the starting point. While,
+	 the stack advances outward at a faster pace. Even though, this would leave one to believe
+	 that a stack finds the goal faster. It can't be guaranteed that the goal is one of the 
+	 furthest points as evidenced by my maze below. (even if it normally is by convention)
+	 
+2.  Construct a maze that's at least 6-by-6 (including boundary walls) in which the goal is 
+    adjacent to the start but it (the goal) is the last cell explored by the stack-based agenda.
+    Remember the NSEW order for exploring neighbor cells. 
+   
+   ######
+   #o...#
+   #*#..#
+   ###.##
+   #....#
+   ######

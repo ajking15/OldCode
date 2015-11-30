@@ -1,0 +1,17 @@
+Script started on Wed Mar 10 14:39:08 2010
+linux2[1]% cat test_input.txt
+hello 1234567890
+This is a test message
+Hello there
+linux2[2]% ./client localhost 5436 < test_input.txt
+hello 1234567890 (16 chars)
+This is a test message (22 chars)
+Hello there (11 chars)
+linux2[3]% ./server 5436
+bind error: Address already in use
+linux2[4]% ./server 5436[K5
+
+linux2[5]% sci[K[K[Kexit
+exit
+
+Script done on Wed Mar 10 14:40:02 2010

@@ -1,0 +1,74 @@
+Load: Name: Bob G Age: 23 ID: 2345
+Load: Name: Shawn J Age: 44 ID: 4565
+Load: Name: David R Age: 24 ID: 4298
+Load: Name: Adam L Age: 12 ID: 8745
+Load: Name: Shishio Makoto Age: 23 ID: 1337
+
+The plane is leaving UMBC and flying to Beijing
+
+Current altitude increased by 700 current altitude: 20700
+
+Current altitude decreased by 50 current altitude: 20650
+
+
+---Transport Status---
+Max Altitude: 350000
+Min Altitude: 20000
+Max Capacity: 5
+Current Altitude: 20650
+Current Position: Air
+Destination: Beijing
+
+---Contents Status---
+Name: Shishio Makoto Age: 23 ID: 1337
+Name: Bob G Age: 23 ID: 2345
+Name: David R Age: 24 ID: 4298
+Name: Shawn J Age: 44 ID: 4565
+Name: Adam L Age: 12 ID: 8745
+
+Plane has landed at Beijing
+
+
+---Transport Status---
+Max Altitude: 350000
+Min Altitude: 20000
+Max Capacity: 5
+Current Altitude: 0
+Current Position: Beijing
+Destination: None
+
+---Contents Status---
+Name: Shishio Makoto Age: 23 ID: 1337
+Name: Bob G Age: 23 ID: 2345
+Name: David R Age: 24 ID: 4298
+Name: Shawn J Age: 44 ID: 4565
+Name: Adam L Age: 12 ID: 8745
+
+The plane is leaving Beijing and flying to Columbia
+
+Current altitude increased by 30000 current altitude: 50000
+
+Cannot descend below min altitude 20000, leveling off at 20000
+Cannont load, the plane is flying
+Plane currently in flight, unload impossible
+Plane currently in flight, unload impossible
+Plane currently in flight, unload impossible
+
+Plane has landed at Columbia
+Item: 1337 has been removed.
+Item: 4565 has been removed.
+Item: 2345 has been removed.
+Item: 4298 has been removed.
+Item: 8745 has been removed.
+
+
+---Transport Status---
+Max Altitude: 350000
+Min Altitude: 20000
+Max Capacity: 5
+Current Altitude: 0
+Current Position: Columbia
+Destination: None
+
+---Contents Status---
+Transport is currently empty
